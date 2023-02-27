@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form action="http://localhost/form.php">
+      <input type="text">
+      <!-- 제출(기본값)을 전송으로바꿈 -->
+      <input type="submit" value="전송">
+
+      <!-- 자바스크립트배우면 그떄 활용가능 -->
+      <input type="button" value="버튼" onclick="alert('hello world')">
+
+      <!-- 사용자가 입력한 정보 초기화됨. -->
+      <input type="reset" >
+
+      <input type="submit">
+    </form>
+
+<br><hr><br>
+
+    <!-- 서버로 데이터를 전송해야하는데
+  UI가 필요없거나 몰래 전송해야하는경우가 있을때 hidden을 사용한다 -->
+  <form action="http://localhost/hidden.php">
+    <input type="text" name="id">
+
+    <!-- 제출을 해보면 url에 hide=egoing이 전송된것이 뜬다. -->
+    <input type="hidden" name="hide" value="egoing">
+
+    <input type="submit">
+  </form>
+
+
+
+  </body>
+</html>

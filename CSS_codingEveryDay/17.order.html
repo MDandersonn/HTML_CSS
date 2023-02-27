@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        body{
+            border:5px solid red;
+            display:flex;
+            
+/*            세로정렬방법*/
+            align-items: center;
+            
+            
+/*            가로정렬방법*/
+            justify-content: center;
+/*            자동행바꿈 */
+/*          flex-wrap:wrap; */
+            
+/*          같은행에있는것을 한 그룹으로 보고 그룹과그룹사이 정렬하는방법 */
+/*          align-content: center; */
+            height:1000px;
+            
+        }
+        .container{
+            border: 1px solid blue;
+            display:flex;
+            flex-direction:column;
+            width:800px;
+        }
+        header{
+            padding-left: 20px;
+            border-bottom: 1px solid gray;
+        }
+        
+
+        footer{
+            border-top: 1px solid gray;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content{
+            display:flex;
+            flex-direction: row
+        }
+        .content nav{
+            border-right:1px solid gray;
+        
+        }
+        .content aside{
+            border-left:1px solid gray;
+            
+        }
+        nav,aside{
+            
+            flex-basis: 150px;
+            flex-shrink: 0;
+        }
+        main{
+            padding:10px;
+        }
+        
+        
+/*        
+        order는 순서정할수있다.!!!!!!!!!!
+        -1값으로 수정하면은 0보다 먼저나오게할수있다.*/
+        nav{
+            order:0;
+        }
+        main{
+            order:1;
+            
+        }
+        aside{
+            order:2;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>생활코딩</h1>
+        </header>
+        <section class="content">
+            <main>
+                생활코딩은 일반인을 위한 코딩 수업입니다.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id repudiandae sint repellat voluptatum quis unde optio iure aliquam eum ea eos perferendis a quo maiores necessitatibus at porro sed quasi doloremque voluptate, iusto  distinctio similique adipisci libero aliquam velit necessitatibus at, ipsum aliquid accusamus autem soluta praesentium, laborum veritatis quibusdam quas odit laudantium totam harum! Ipsum, dicta, et! Unde odio libero nihil laboriosam quibusdam praesentium velit mollitia corporis error dolorem quis reiciendis vero expedita iste assumenda, voluptates, magni commodi. Iure mollitia explicabo officia ipsum aspernatur quod dolore voluptates fuga qui iusto accusantium porro atque ipsa est, vitae laborum excepturi! Qui, quisquam? Voluptate laudantium beatae natus assumenda repellat fuga odio optio dignissimos, pariatur! Sunt rerum et totam, laborum quidem in voluptate quia beatae tenetur labore, autem dolor, recusandae, vitae aperiam tempora! Quasi perferendis eos a vitae! Aut et rem laudantium modi, sit consequuntur quidem reiciendis debitis autem alias, 
+            </main>
+            <aside>
+                AD
+            </aside>
+            <nav>
+               <ul>
+                   <li>html</li>
+                   <li>css</li>
+                   <li>javascript</li>
+               </ul>
+            </nav>
+            
+            
+        </section>
+        <footer>
+            <a href="https://www.naver.com">홈페이지</a>
+        </footer>
+    </div>
+</body>
+</html>

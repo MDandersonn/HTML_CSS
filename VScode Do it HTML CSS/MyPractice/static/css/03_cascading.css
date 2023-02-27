@@ -1,0 +1,20 @@
+/* 
+적용 우선순위
+!important > 인라인스타일> id스타일> 클래스스타일 > 타입스타일 
+
+우선순위가 같으면 후에나온것이 덮어씌워져서적용됨
+ */
+
+p{
+    color:green !important;
+}
+
+p{
+    color:blue
+}
+/* 상속 p태그의 부모인 body에 적용하면 자식태그도 다적용됨 */
+body{
+    font-size: 20px;
+    color: darkred;
+    
+}

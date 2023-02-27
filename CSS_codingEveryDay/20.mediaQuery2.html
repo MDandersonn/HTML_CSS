@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        
+        .container{
+            border: 1px solid blue;
+            display:flex;
+            flex-direction:column;
+            
+            
+        }
+        header{
+            padding-left: 20px;
+            border-bottom: 1px solid gray;
+        }
+        
+
+        footer{
+            border-top: 1px solid gray;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .content{
+            display:flex;
+            flex-direction: row;
+        }
+        .content nav{
+            border-right:1px solid gray;
+        
+        }
+        .content aside{
+            border-left:1px solid gray;
+            
+        }
+        nav,aside{
+            
+            flex-basis: 150px;
+            flex-shrink: 0;
+        }
+        main{
+            padding:10px;
+        }
+/*        500이하일때. */
+        @media (max-width: 500px){
+            .content{
+            display:flex;
+            flex-direction:column;
+            }
+            
+/*            메인태그를 가장 위쪽으로 올림*/
+            main{
+                order:0;
+            }
+            nav{
+                order:1;
+            }
+            aside{
+                order:2;
+/*                광고보기 싫을때*/
+/*                display:none;*/
+            }
+            nav,aside{
+                
+/*                자동으로 컨텐츠 크기만큼 크기가 지정됨*/
+            flex-basis: auto;
+            flex-shrink: 0;
+            }
+            .content aside{
+            border-left:none;
+            
+            }
+            .content nav{
+            border-right:none;
+        
+            }
+        }
+        
+
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>생활코딩</h1>
+        </header>
+        <section class="content">
+            <nav>
+               <ul>
+                   <li>html</li>
+                   <li>css</li>
+                   <li>javascript</li>
+               </ul>
+            </nav>
+            <main>
+                생활코딩은 일반인을 위한 코딩 수업입니다.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id repudiandae sint repellat voluptatum quis unde optio iure aliquam eum ea eos perferendis a quo maiores necessitatibus at porro sed quasi doloremque voluptate, iusto  distinctio similique adipisci libero aliquam velit necessitatibus at, ipsum aliquid accusamus autem soluta praesentium, laborum veritatis quibusdam quas odit laudantium totam harum! Ipsum, dicta, et! Unde odio libero nihil laboriosam quibusdam praesentium velit mollitia corporis error dolorem quis reiciendis vero expedita iste assumenda, voluptates, magni commodi. Iure mollitia explicabo officia ipsum aspernatur quod dolore voluptates fuga qui iusto accusantium porro atque ipsa est, vitae laborum excepturi! Qui, quisquam? Voluptate laudantium beatae natus assumenda repellat fuga odio optio dignissimos, pariatur! Sunt rerum et totam, laborum quidem in voluptate quia beatae tenetur labore, autem dolor, recusandae, vitae aperiam tempora! Quasi perferendis eos a vitae! Aut et rem laudantium modi, sit consequuntur quidem reiciendis debitis autem alias, 
+            </main>
+            <aside>
+                AD
+            </aside>
+        </section>
+        <footer>
+            <a href="https://www.naver.com">홈페이지</a>
+        </footer>
+    </div>
+</body>
+</html>

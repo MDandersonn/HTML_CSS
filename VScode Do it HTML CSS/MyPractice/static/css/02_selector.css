@@ -1,0 +1,38 @@
+/* 전체선택자 : 웹문서 전체에다가 적용하는것 */
+*{
+    color:brown;
+    /* margin은 여백 제거 */
+    /* margin:0; */
+}
+
+/*타입선택자/태그선택자:  특정태그에만 적용하고싶을때 */
+/* 그룹 선택자 :선택자2개를 쉼표를 통해서 나열*/
+p,h2{
+    background-color: skyblue;
+}
+
+/* class선택자 */
+.c1{
+    background-color: bisque;
+
+}
+
+/* 태그안에 특정부분만 적용하고싶을때. */
+.c2{
+    color:blue;
+}
+
+
+/* id선택자 : 문서안에서 특정하나만 사용 */
+#i1{
+    background-color: yellow;
+    border:1px solid #222;
+    padding:10px;
+}
+/* 
+!important > 인라인스타일> id스타일> 클래스스타일 > 타입스타일 
+ */
+body{
+    color: blueviolet;
+}
+

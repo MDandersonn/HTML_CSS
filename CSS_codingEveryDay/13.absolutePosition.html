@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #parent,#other{
+            border: 5px solid red;
+            
+        }
+        #parent{
+/*            position:relative;*/
+/*            부모를 relative로지정하면 자식은 parent위치를 기준으로 자신의
+            offset값을 지정함*/
+/*            static이 아닌부모가 나타나면 그 부모의 위치를 기준으로 offset값지정함.*/
+        }
+        #me{
+            background-color: aquamarine;
+            position:absolute;
+/*            width:200px;*/
+            
+/*            absolute는 스크롤하면 없어짐.
+            html엘리먼트를 기준으로 위치를 지정하고 싶을때는 absolute사용
+            
+            */
+/*   앱솔루트를 쓰는순간 parent의 자식이 적용이안되서 위에 red테두리가 작아짐*/
+
+            
+/*    absolute를 지정하면 부모엘리먼트를 기준으로 자기 원래위치가 left와 top의 기본값으로 지정됨
+            */
+            
+  /*  0인경우엔 단위값px 안붙여도된다.*/
+            left:0;
+            top:0;
+        }
+        #t1{
+            width: 100px;
+        }
+    
+    </style>
+</head>
+<body>
+   <div id="other">other</div>
+   <div id="parent">parent
+       <div id="me">me</div>
+   </div>
+   
+   <div id='t1'>
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae, sequi, vitae. Veniam, facilis nam quo facere quasi dolorum, ullam ipsam consectetur, harum laboriosam soluta. Et voluptates iste quos aliquid ipsa.
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore dignissimos in eius, ab a inventore consequatur, dolore cupiditate perspiciatis, similique incidunt blanditiis consectetur provident, aliquam nemo laudantium excepturi iure magnam!
+   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium cupiditate perferendis, quia quasi eos dolorum saepe ipsam similique cum eius delectus rerum quam odit harum, facere aut nihil dolore illum!
+   </div>
+    
+</body>
+</html>

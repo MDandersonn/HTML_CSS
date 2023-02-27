@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        html{
+            border:5px solid gray;
+        }
+        div{
+            border:5px solid red;
+            margin:10px;
+        }
+        #me{
+/*            position을 없애면 기본값인 static;속성값을 갖게되서
+            left와 top값이 무시된다 각각의 element들은 기본값을 갖게된다
+            position:static; :원래 위치에 정적으로 위치
+            relative: 원래위치기준으로 left,top만큼 이동
+            
+            */
+            position:relative;
+            left:70px;
+            top:100px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+   <div id="other">other</div>
+   <div id="parent">
+        parent
+       <div id="me">me</div>
+   </div>
+    
+</body>
+</html>

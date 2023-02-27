@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        li{
+            display:inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <ul>
+            <li><img src="./bush.jpg" alt="" width="300px"></li>
+            <li><img src="./flower.jpg" alt="" width="300px"></li>
+            <li><img src="./ocean.jpg" alt="" width="300px"></li>
+            <li><img src="./tree.jpg" alt="" width="300px"></li>
+            <li><img src="./mountain1.jpg" alt="" width="300px"></li>
+            <li><img src="./mountain2.jpg" alt="" width="300px"></li>
+        </ul>
+
+    </div>
+
+    <div>
+        <img src="./tree.jpg" alt="" width="800px" id="lightbox">
+    </div>
+    
+    <script>
+        var ul = document.getElementsByTagName("ul")[0];
+        var pics = ul.getElementsByTagName("img");
+        var lightbox = document.getElementById("lightbox");
+
+        for(let i=0; i<pics.length;i++){
+            pics[i].addEventListener("click",showLight);
+        }
+
+        function showLight(){
+            lightbox.src=this.src;
+            lightbox.style.display='block';
+
+        }
+        lightbox.onclick=function(){
+            lightbox.style.display='none';
+        }
+
+    </script>
+</body>
+</html>

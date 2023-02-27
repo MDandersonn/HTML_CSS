@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="./mountain1.jpg" alt="" width="400px";>
+
+    <h2>도형 위로 마우스 포인터를 올려놓으세요</h2>
+    <div style="border:1px solid; width:100px; height:100px;"></div>
+
+
+    <script>
+        var img = document.querySelector("img");
+        img.addEventListener("mouseover",change);
+        img.addEventListener("mouseout",function() {img.src="./mountain1.jpg"});
+
+        function change(){
+            this.src="./mountain2.jpg"
+        }
+        
+        
+
+        // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+        var div= document.querySelector("div");
+        div.addEventListener("mouseover",colorChange);
+
+        
+        div.addEventListener("mouseout",function(){
+            div.style.backgroundColor= '';
+            div.style.borderRadius = '';
+            div.style.transitionDuration= '1s';
+        });
+
+        function colorChange(){
+            div.style.backgroundColor= 'green';
+            div.style.borderRadius = '50%';
+            div.style.transitionDuration= '1s';
+        };
+
+    </script>
+    
+</body>
+</html>

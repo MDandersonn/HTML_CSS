@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>hello world</h1>
+    <!-- 색낄에도 ''붙여야함 -->
+
+    <input type="button" value="night" onclick="
+      var target = document.querySelector('body');
+      if(this.value ==='night'){
+        target.style.backgroundColor='black';
+        target.style.color='white';
+        this.value='day';
+      }else{
+        target.style.backgroundColor='skyblue';
+        target.style.color='yellow';
+        this.value='night';
+      }
+    ">
+
+  </body>
+</html>

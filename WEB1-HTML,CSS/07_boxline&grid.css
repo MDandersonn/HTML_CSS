@@ -1,0 +1,66 @@
+
+  body{
+    margin:0;
+
+  }
+  a{
+    color:black;
+    text-decoration: none;
+  }
+  #active{
+
+    font-size: 3px;
+
+  }
+  .saw{
+    color:gray;
+  }
+  .active{
+
+    font-size: 40px;
+
+  }
+  h1{
+    font-size: 40px;
+    text-align: center;
+    /* 아래라인 */
+    border-bottom:1px solid gray;
+    margin:0;
+    padding:20px;
+  }
+  ol{
+    /* 옆라인 */
+    border-right:1px solid gray;
+    width: 100px;
+    margin:0;
+    padding:20px;
+  }
+  #grid ol{
+    padding-left:30px;
+  }
+  #grid{
+    display:grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #grid #article{
+    padding-left:25px;
+  }
+
+  #r1{
+    /* div는 내용물잌 커짐에따라 border가 정해지는구나 */
+    display: block;
+      border:1px solid red;
+  }
+  @media(max-width:800px){
+    #grid{
+      display:block;
+      /* 블록영역은 가로 화면전체를씀. */
+      border:1px solid red;
+    }
+    ol{
+      border-right:none;
+    }
+    h1{
+      border-bottom:none;
+    }
+  }

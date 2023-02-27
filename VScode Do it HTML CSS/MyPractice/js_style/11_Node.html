@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Web Programming</h1>
+    <h3>공부할 주제를 기록해 보세요</h3>
+
+    <form >
+        <input type="text" autofocus>
+        <button onclick="add(); return false;">추가</button>
+        <ul>
+
+        </ul>
+    </form>
+
+
+    <script>
+
+        function add(){
+
+            var li=document.createElement("li");
+            var input= document.querySelector('input');
+            var ul2=document.querySelector('ul');
+
+            // value값도 create로 묶어야함.
+            var iv= document.createTextNode(input.value);
+            li.appendChild(iv);
+            ul2.insertBefore(li,ul2.childNodes[0]);
+            input.value="";
+
+
+            var list = document.querySelectorAll('li');
+            console.log(list);
+            for(let i=0; i<list.length ; i++){
+                list[i].addEventListener("click",func);
+            }
+        }
+
+        
+            
+        
+        function func(){
+            if(this.parentNode){
+                this.parentNode.removeChild(this);
+            }
+        }
+
+
+    </script>
+</body>
+</html>

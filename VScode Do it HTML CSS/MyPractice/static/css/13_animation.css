@@ -1,0 +1,55 @@
+.c1,.c2,.c3{
+    border: 1px solid;
+    width: 100px;
+    height: 100px;
+    margin:0 auto;
+}
+.r1{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    animation:rotate 1.5s infinite , background 1.5s infinite alternate;
+}
+
+@keyframes rotate{
+
+    from{transform: perspective(200px) rotateX(0deg) rotateY(0deg);}
+    50%{transform: perspective(200px) rotateX(-180deg) rotateY(0deg);}
+    to{transform: perspective(200px) rotateX(-180deg) rotateY(-180deg);}
+}
+
+@keyframes background{
+
+    from{background-color: red;}
+    50%{background-color: green;}
+    to{background-color: blue;}
+}
+
+.r2{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    animation-name:shape;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+
+}
+
+@keyframes shape {
+    from{border-radius: 0%;}
+    to{border-radius: 50%;}
+    
+}
+@keyframes rotate2{
+    from{transform :rotate(0deg);}
+    to{transform :rotate(180deg);}
+
+}
+.r3{
+    background-color: aqua;
+    width: 100px;
+    height: 100px;
+    animation-name:rotate2;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}

@@ -1,0 +1,73 @@
+/* text속성 */
+h1{
+    /* 첫번째 글꼴을 가져올수없을때 두번째 글꼴가져오라는의미  */
+    font-family: consolas,나눔고딕,굴림, 바탕;
+
+    /*대문자M의 폭이 1em  3em은 3배라는뜻*/
+    font-size: 3em ;
+    font-style: italic;
+
+    /* 폰트굵기 */
+    font-weight: 700;
+}
+
+.c1{
+    font-size: small;
+}
+
+/* 칼라속성 */
+h2{
+    /* 맨 뒤숫자는 투명도( 배경이미지가 있다면 드러나게됨) */
+    color:rgba(255, 162, 0, 0.508);
+    
+    /* 정렬 */
+    text-align: center;
+
+    /*  줄간격   150%로하면 글자크기의 1.5배라는 의미 ,  2라고하면 2배라는의미 */
+    line-height: 2;
+
+    /*밑줄긋기underline/ 취소선 line-through/ 밑줄을 지울때 none
+    하이퍼링크에서 밑줄생기는거 지울때 none을 많이 쓴다.*/
+    text-decoration: underline;
+
+    /* 그림자   
+         가로(양수면 오른쪽) 세로(양수면 밑으로) 흐린정도, 색상  */
+    text-shadow: -20px 20px 3px gray;
+
+
+}
+a{
+    /*밑줄긋기underline/ 취소선 line-through/ 밑줄을 지울때 none
+    하이퍼링크에서 밑줄생기는거 지울때 none을 많이 쓴다.*/
+    text-decoration: none;
+}
+
+ul{
+    /* 리스트순서명 정하기 */
+    list-style-type: square;
+}
+
+table{
+    /* 캡션의 위치설정 */
+    caption-side: bottom;
+
+    /* 테두리그리기 */
+    border: 1px solid #222;
+
+    /* 테두리를한겹으로 */
+    border-collapse: collapse;
+}
+th{
+    /* 제목만 배경색입히기 */
+    background-color: antiquewhite;
+}
+td,th{
+    /* 셀의 테두리 */
+    border:1px solid #222;
+    padding:10px;
+    
+}
+
+
+
+

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form action="http://localhost/login.php" method="get">
+      <p>
+        <!-- 레이블로 감싸주면 텍스트는 무언가의 이름표라는 의미가 생김 -->
+        <!-- for~ 를 통해서 input태그 의 레이블이라는것을 알수있따 -->
+        <label for="id_txt">아이디:</label>
+        <input id="id_txt" type="text" name="id" value="기본값입니다">
+      </p>
+
+      <p>
+        <label for="password">비밀번호:</label>
+        <input id='password' type="password" name="pwd">
+      </p>
+
+      <p>
+      <label>주소: <input type="text" name="address"></label>
+      </p>
+
+      <input type="submit">
+      </form>
+
+  </body>
+</html>

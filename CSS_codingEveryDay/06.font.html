@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style>
+  /*@폰트크기
+  px고정크기
+    em
+    rem을 사용하자.
+
+    rem :폰트크기를 조정할수있는 사용자의 권리를존중
+    브라우저의 글꼴크기를 키웠을때 바뀜
+
+   */
+    #px{
+      font-size:20px;
+      color:powderblue;
+      text-align: center;
+      border: 1px solid red;
+    }
+    #rem{
+      font-size:2rem;
+      color:tomato;
+      /* justify: 문단이 삐쭉삐쭉할때, 왼쪽과 오른쪽이 균등하게 간격조절해줌 */
+      text-align:justify;
+      border: 1px solid red;
+    }
+    #font{
+      font-weight: bold;
+      font-size:5rem;
+
+      /*px쓰지말것.  글자크기의 1.5배라는뜻  */
+      line-height: 1.5;
+
+      /* 순서대로 있는폰트 사용 이름에 띄어쓰기가 있는 폰트는" ~"로 묶어준다.  */
+      /* 마지막폰트는 포괄적인 폰트로 지정한다.  serif(장식) sans-serif cursive(흘림체) fantasy monospace(고정폭) */
+      font-family: "Helvetica Neue", cursive
+
+    }
+    #font2{
+      /*   굵기  폰트크기/line-heght 글씨체 */
+      font: bold 5rem/2 arial;
+    }
+
+  </style>
+
+  <body>
+    <div id="px">
+      px
+    </div>
+    <div id="rem">
+      rem
+    </div>
+    <div id= "font">
+      Hello World!<br>
+      Hello World!
+    </div>
+    <div id= "font2">
+      Hello World!<br>
+      Hello World!
+    </div>
+
+  </body>
+</html>

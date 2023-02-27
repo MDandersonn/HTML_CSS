@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>제목</h1>
+    컨트롤+알트+화살표로 다중키가능.<br>
+    <a href="https://www.naver.com">네이버링크입니다</a>
+    <img src="pixabay1.jpg" alt="">이미지삽입입니다<br>
+
+    보더=1은 표형식으로 해줌<br>
+    tr은 행을의미<br>
+    th는 열제목<br>
+    td는 값들<br>
+
+    <table border="1">
+        <tr>
+            
+            <th> 열제목1</th>
+            <th> 이름</th>
+            <th> 수강과목</th>
+        </tr>
+        <tr>
+            <td>1.</td>
+            <td>홍길동</td>
+            <td>수학</td>
+        </tr>
+        <tr>
+            <td rowspan="2">1.</td><!--행병합 땜에 지움-->
+            <td colspan="2">홍길동</td>
+            <!--<td>수학</td>--><!--열병합 땜에 지움-->
+        </tr>
+        <tr>
+            <!--<td>1.</td> -->
+            <td>홍길동</td>
+            <td>수학</td>
+        </tr>
+    </table>
+
+    <ul>
+        <li>목록1</li>
+        <li>목록2</li>
+        <li>목록3</li>
+        <ol>
+            <li>서브목록1</li>
+            <li>서브목록1</li>
+            <li>서브목록1</li>
+            <li>서브목록1</li>
+        </ol>
+        <li>목록4</li>
+    </ul>
+    <ol>
+        <li>목록1</li>
+        <li>목록1</li>
+        <li>목록1</li>
+        <li>목록1</li>
+    </ol>
+    <p>
+        p태그는 문장의 단락을 표시하는 태그입니다.
+        긴장문이 있을때 해당 문단의 시작을 알려주는 태그입니다
+        기본적으로 p태그는 개행이 2번이루어집니다. p태그는 주로
+    </p>
+    <p>
+        p태그는 문장의 단락을 표시하는 태그입니다.
+        긴장문이 있을때 해당 문단의 시작을 알려주는 태그입니다
+        기본적으로 p태그는 개행이 2번이루어집니다. p태그는 주로
+    </p>
+    <div>DIV태그는 영역을 잡을때 사용</div>
+    <div>DIV태그는 영역<span style="background-color: blue;">span영역은 칼라넣을수있음</span>을 잡을때 사용</div>
+    <form action="index2.html" method="POST">
+        <input type="text" name="" id="">
+        <input type="password" name="" id="">
+        <input type="radio" name="" id="">
+        <input type="checkbox">
+        <input type="checkbox">
+        
+        <input type="hidden" name="" value="사용자ID"><br>
+        ID또는 비밀번호를 밸류에 적어준다. 
+        <textarea name="" id="" cols="30" rows="10">긴 텍스트 입력할때.</textarea>
+        <select name="select1" id="">
+            <option value="apple1">과일1</option>
+            <option value="banana1">과일2</option>
+        </select>
+
+        <input type="submit" value="제출"><br>
+        제출버튼을 누르면 해당페이지로 넘어감
+        form태그는 서버단에 데이터를 넘기기위해 주로사용
+        사용자아이디 비번 적고 회원가입, 로그인 버튼을 누를 때활용 
+        액션에는 서버단 주소 를 넣어줌
+    </form>
+
+    <iframe src="https://www.naver.com" frameborder="0" style="width: 500px height: 600px;"></iframe>
+    다른페이지내용가져올때 또는 유투브 삽입.
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <style>
+  /* 모든 자손태그 */
+    ul li{
+      color:red;
+    }
+    /* 자식 */
+    #r1>li{
+      border:2px solid red;
+    }
+    ol,ul{
+      background-color:powderblue;
+    }
+
+  </style>
+
+  <body>
+
+
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+      <li>JavaScript</li>
+    </ul>
+
+    <ol id="r1">
+      <li>HTML</li>
+      <li>CSS
+        <ol>
+          <li>selector</li>
+          <li>declaration</li>
+        </ol>
+      </li>
+      <li>JavaScript</li>
+    </ol>
+
+  </body>
+</html>

@@ -1,0 +1,52 @@
+#container{
+    width: 300px;
+    height: 300px;
+
+    border: 1px solid;
+    background-color: lightgray;
+    margin: 30px;
+
+
+/* 플렉스컨테이너로 지정한다. 주축의 기본값이 가로가된다.*/
+    display:flex;
+
+/* 기본축 지정 .배치방법 column세로방향  row:가로방향 */
+    /* flex-direction: row; */
+
+
+    /*  wrap :내부에감싸기(컨테이너내부에서줄바꿔서표현)  nowrap:(기본값)컨테이너밖으로 빠져나올수있음*/
+    flex-flow: row wrap;
+    
+    
+    /*주축의정렬방법
+     flex-start주축의 시작부분을 기준으로 배치하는것 
+    flex-end 끝부타
+    center가운데
+    space-between 간격두고*/
+    /* justify-content: space-between; */
+
+    /* 한줄일때 교차축의 정렬방법 
+    baseline:글자 기준선에 맞춰서정렬
+    stretch: 교차축에 가득차게늘려서 채워줌*/
+    /* align-items: flex-end; */
+
+    /* 여러줄일떄 교차축의 정렬방법 */
+    align-content: space-around;
+
+
+
+}
+
+
+.r1{
+    width:120px;
+    border:1px solid;
+    background-color: rgba(127, 255, 212, 0.536);
+
+}
+
+p{  
+    /* border: 1px solid; */
+    text-align: center;
+    
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!-- action은 전송할 곳을 의미한다.
+  서버로 전송할떄 각각의 name값이 작성한것으로 지정됨 -->
+    <form action="http://localhost/login.php" method="get">
+      <p>아이디: <input type="text" name="id" value="기본값입니다"></p>
+      <p>비밀번호 <input type="password" name="pwd"></p>
+      <p>주소: <input type="text" name="address"></p>
+      <p>메모:
+        <textarea name="name" rows="10" cols="50">
+          기본값입니다.
+        </textarea>
+      </p>
+      <input type="submit">
+      </form>
+<hr>
+  <form action="http://localhost/login.php" method="get">
+    <h1>색상</h1>
+    <!-- name은 필수. 그래야 값이 전송됨 -->
+    <select  name="color">
+      <!-- value는 전송할때 전해지는 값 -->
+      <option value="red">붉은색</option>
+      <option value="black">검은색</option>
+      <option value="blue">파란색</option>
+    </select>
+
+    <h1>다중색 multiple</h1>
+    <!-- name은 필수. 그래야 값이 전송됨 -->
+
+    <!-- multiple넣으면 다중선택가능(쉬프트로) -->
+    <select  name="color2" multiple>
+
+      <!-- value는 전송할때 전해지는 값 -->
+      <option value="red">붉은색</option>
+      <option value="black">검은색</option>
+      <option value="blue">파란색</option>
+    </select>
+  <input type="submit">
+  </form>
+
+
+  </body>
+</html>

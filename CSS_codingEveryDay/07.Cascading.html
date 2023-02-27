@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      li{
+        color:red;
+      }
+      #r1{
+        color:blue;
+      }
+      .class {
+        color:green;
+        /* !important는 속성값뒤에붙이는것이다.  */
+        /* color:green !important;  */
+      }
+    </style>
+  </head>
+  <body>
+    <ul>
+      <li>html</li>
+      <li id="r1" class="class" style="color:violet;">css</li>
+      <li>javascript</li>
+    </ul>
+    <ol>
+      우선순위 순서
+      <li>!important</li>
+      <li>style="color:~;" 인라인스타일</li>
+      <li>#id</li>
+      <li>.class</li>
+      <li>tag selector</li>
+
+    </ol>
+
+  </body>
+</html>

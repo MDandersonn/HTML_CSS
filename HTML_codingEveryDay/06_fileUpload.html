@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!-- 파일전송 반드시 method="post"
+      enctype= "multipart/form-data" 로 처리해야함 -->
+    <form action="http://localhost/upload.php" method="post"
+      enctype= "multipart/form-data">
+      <!-- name 필수. -->
+      <input type="file" name= "profile">
+      <input type="submit">
+    </form>
+
+  </body>
+</html>

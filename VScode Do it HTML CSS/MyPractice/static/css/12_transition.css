@@ -1,0 +1,69 @@
+
+.c1{
+    height:100px;
+    width:100px;
+    border:1px solid;
+    margin: 100px auto;
+
+
+}
+.c2{
+    height:100px;
+    width:100px;
+    border:1px solid;
+    margin: 100px auto;
+    /* 원근감추가 */
+    perspective: 400px;
+    
+}
+.r1,.r2,.r3,.r4{
+    height:100px;
+    width:100px;
+    background-color: rgba(127, 255, 212, 0.536);
+
+}
+.r5,.r6,.r7,.r8{
+    height:100px;
+    width:100px;
+    background-color: rgba(27, 25, 12, 0.536);
+    
+    /* 3초동안 변화 */
+    transition:all 3s;
+    
+}
+
+/* hover:마우스를대면 
+translateX X축으로 이동
+ */
+.r1:hover{
+    /* 트랜지션을 줄 속성을 선택하기 */
+    transition-property: width, height;
+
+    /* 효과를 몇초동안 실행할건지 */
+    transition-duration: 2s, 1s;
+    width:200px;
+    height:120px;
+    
+}
+.r2:hover{
+    /* 바꿀려는속성 모두다는 all이라적으면됨 */
+    transition-property: all;
+    transition-duration: 2s;
+
+    /* 1초있다가 실행되는것 */
+    transition-delay :1s;
+/*linear: 트랜지션의 시작과 끝이 일정한것 
+ease-in: 천천히시작 */
+    transition-timing-function: ease-in;
+
+    width:200px;
+    height:120px;
+    transform:skewX(45deg);
+    
+}
+.r3:hover{
+    /*맨앞에 all은 일반적으로생략 첫번째초 :실행시간 두번째초:지연시간  */
+    transition: 2s ease-in;
+    transform:rotate(270deg);
+    
+}

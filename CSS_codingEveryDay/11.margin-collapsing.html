@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        #parent{
+/*           여기 border를 주석처리하면 마진겹침현상이 일어난다.*/
+/*부모태그의 border가 투명한상태가되면 부모태그와 자식태그의 마진값이 합쳐지는 결과를 낳는다.*/
+
+/*         border:5px solid red;*/
+
+            margin-top:100px;
+        }
+        #child{
+            background-color:powderblue;
+            border:1px solid black;
+            margin-top:50px;
+        }
+        
+        h1{
+            border:1px solid red;
+            margin:50px;
+        }
+        #r1{
+            margin:90px;
+        }
+        
+        
+        
+        hr{
+            margin:0px;
+            padding:0px;
+            
+        }
+        
+        
+        #empty{
+/*            border같은 시각적효소가 없어지면 위아래가 마진겹침일어남*/
+/*            border: 1px solid red;*/
+            margin-top:50px;
+            margin-bottom: 100px;
+            
+            
+        }
+        #normal{
+            border: 1px solid red;
+            background-color: antiquewhite;
+            margin-top:100px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="parent">
+        <div id="child">Hello World</div>
+    </div>
+    
+<br><hr>
+    <h1 id="r1">hello world</h1>
+    <h1>hello world</h1>
+    
+<!--    마진이 겹치면 마진이 큰쪽으로 흡수된다.-->
+
+
+
+<br><hr>
+<div id='empty'></div>
+<div id="normal">marginTest2</div>
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul>
+        <li>one</li>
+        <li>two</li>
+        <li>three</li>
+        <li>four</li>
+    </ul>
+
+    <a href='http://www.naver.com/' onclick="loadURL(this.href);  return false;">자세히 보기</a>
+    <!-- 창닫기. -->
+    <button onclick="javascript:window.close()">닫기</button>
+    
+    <script>
+        function loadURL(url){
+            window.opener.location=url;
+            window.close();
+        }
+    </script>
+</body>
+</html>

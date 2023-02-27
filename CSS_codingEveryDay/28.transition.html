@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+        
+        a{
+            font-size: 3rem;
+/*            transform는 블럭이 block이거나 inline-block일때만 동작한다.
+            그래서 inline인것은 inline-block으로 바꿔주자.*/
+            display: inline-block;
+/*            모든효과에대해서 변화가 일어났을때 전환이일어난다.
+             transition-property:all;
+            */
+            transition-property:  font-size transform ;
+            
+/*            장면전환이 걸리는시간*/
+            transition-duration: 1s;
+            
+/*            transition:all 1s; 이렇게 축약가능하다 */
+/*             transition:font-size 1s  transform 0.1s;*/
+            
+/*            1초 지나고 움직인다.*/
+            transition-delay: 1s;
+            
+/*            느리게출발해서 빨라지는거*/
+            transition-timing-function: ease-in;
+            
+        }
+/*    클릭시*/
+        a:active{
+/*            x축 y축으로 20px씩 이동
+            transform는 블럭이 block이거나 inline-block일때만 동작한다.*/
+           transform:translate(20px,20px) ;
+        font-size: 1rem;
+        
+        }
+    </style>
+</head>
+<body>
+    <a href="#">#을쓰면 웹페이지로이동하지않음</a>
+    <a href="ㅁㄴㅇ">#을쓰면 웹페이지로이동하지않음</a>
+</body>
+</html>

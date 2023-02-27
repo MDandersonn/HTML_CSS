@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/site.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <!-- 배경을 클릭하면 닫히는 모달 -->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal1">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- 배경을 클릭해도 닫히지 않는 모달 -->
+    <!-- Button trigger modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        Launch static backdrop modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 스크롤 가능한 모달  .modal-dialog에 .modal-dialog-scrollable를 추가하는 것으로, 모달 본체를 스크롤할 수 있는 스크롤 가능한 모달로 만들 수 있습니다.
+ -->
+    <!-- Scrollable modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#longmodal">
+        Launch demo modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade " id="longmodal" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="longmodalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="longmodalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus totam est dolor quibusdam
+                    perspiciatis. Aperiam commodi fugit blanditiis consequatur, consectetur asperiores mollitia totam
+                    similique exercitationem, facere ut? Ducimus, quaerat sit, voluptates itaque, fugiat similique dicta
+                    commodi recusandae architecto obcaecati nihil expedita. Voluptatem sint sapiente voluptas! Molestias
+                    exercitationem nisi delectus fugit eos veniam voluptatem sint ullam, dignissimos aliquid cum facilis
+                    a. Ratione voluptas, dolore quidem accusantium asperiores tenetur amet alias deleniti necessitatibus
+                    est ipsum cupiditate doloremque nobis, deserunt qui cumque officiis eius, assumenda distinctio dicta
+                    provident soluta? Ipsa libero quis aperiam sunt laboriosam consequuntur explicabo commodi officia
+                    dicta eaque numquam odio soluta iure ducimus praesentium ipsum ex, tenetur porro vitae labore.
+                    Officia ipsa, sequi perspiciatis perferendis cum quia sed! Velit corporis aliquam animi perspiciatis
+                    enim corrupti quisquam asperiores, laborum quam! Quisquam excepturi totam possimus, eaque, molestiae
+                    voluptate cupiditate, soluta consectetur odio saepe incidunt iure. Esse excepturi iste quia labore
+                    exercitationem necessitatibus nulla pariatur id quod doloremque accusamus inventore voluptatum,
+                    omnis placeat, tempora alias voluptas dolorem sequi vero? Deserunt fugiat deleniti nostrum qui
+                    beatae, maiores a corporis optio vero, quibusdam ea maxime? At rerum nihil natus eum corporis
+                    laborum porro alias, accusamus magnam eligendi doloribus beatae ipsum velit ipsam fugiat nemo nobis
+                    deserunt, id voluptas aspernatur? Laudantium sit nisi vero labore nostrum sequi atque repudiandae
+                    magnam fugiat animi saepe, ea nam natus iure quae nobis dolorem inventore quidem. Debitis explicabo
+                    sunt, eius officiis recusandae similique, commodi harum unde earum mollitia alias neque, numquam
+                    quod! Sint nisi sequi nulla amet omnis non facere nam accusantium tempore. Quaerat repellendus
+                    laudantium iure non quo? Error expedita, assumenda veritatis consectetur alias voluptatum ab, dolore
+                    animi aut, reiciendis aspernatur dolores asperiores doloremque! Recusandae adipisci eum similique ad
+                    consequuntur, tempora, doloremque nulla exercitationem rerum dicta explicabo voluptatem officiis
+                    quos, consectetur inventore doloribus veniam deserunt dolor ipsam deleniti numquam dolore
+                    praesentium. Est saepe reiciendis fugiat quia natus libero beatae! Neque rerum saepe aperiam
+                    provident ex commodi pariatur alias maiores nihil? Voluptate minima sint natus quod optio, iure
+                    magnam dolore sapiente vitae beatae, fugiat qui quis tenetur. Nam soluta, quos quisquam optio
+                    voluptatem sequi adipisci? Necessitatibus officiis similique ipsam saepe vitae reprehenderit veniam
+                    consequuntur omnis excepturi. Doloremque natus impedit molestiae corrupti dolore, dolores
+                    praesentium non pariatur placeat! Repudiandae quidem quaerat alias id officiis, molestiae laboriosam
+                    voluptatum eius ipsum accusamus, animi porro, quia quod cumque sed omnis mollitia voluptates
+                    expedita ad ex nulla illo! Quis quas aperiam eligendi, natus fugit quo tempore earum beatae, magni
+                    rem eaque nihil maxime odio commodi vero. Amet dicta eaque iste est reiciendis, delectus odio magni
+                    nam libero, error consectetur voluptates totam commodi praesentium eos id consequatur voluptatum ea
+                    eligendi nihil tempore tempora. Nostrum quia nam veniam dolorem voluptas, debitis cumque distinctio
+                    eligendi, repudiandae quam aut. Cumque, ea. Quas porro excepturi commodi libero repellat error
+                    quaerat. Laudantium illo repellat cupiditate odit quos placeat, aspernatur ipsam similique. Aperiam
+                    consequatur est perferendis cumque, incidunt nisi reiciendis similique pariatur illo! Esse
+                    distinctio facere incidunt facilis enim voluptates. Atque, in aperiam maiores cupiditate nam
+                    nesciunt magni quam assumenda omnis rem.Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Quam reiciendis nulla enim ab veniam, et vero at. Quisquam reprehenderit quidem dicta repellat?
+                    Natus, aliquid vero iste fuga, veritatis laboriosam minima blanditiis quasi quibusdam sequi deleniti
+                    earum est voluptatum minus, repellat ullam pariatur tempore. Ullam odit blanditiis facilis corporis,
+                    dolor quam repellat laudantium quos vel aliquid, qui aspernatur placeat! Non error vel tempore
+                    consequuntur similique perspiciatis odit autem, minima dolore iure accusamus illo expedita nulla ab.
+                    Doloribus aliquam repellendus officia? Obcaecati enim alias laborum, impedit facere molestias!
+                    Fugiat mollitia quia quam ipsa alias quod, atque expedita? Expedita numquam corrupti minima, sint
+                    quo ut unde aperiam magni exercitationem laborum accusantium iure recusandae qui doloribus
+                    laboriosam nisi ipsum nostrum error architecto odit tempora amet adipisci delectus ducimus. Minus
+                    voluptas ipsam officiis rerum cumque ut, eum, nihil pariatur illo quibusdam unde delectus dicta
+                    mollitia maiores nisi debitis. Beatae excepturi ratione nulla sed doloremque unde laudantium
+                    voluptatibus obcaecati possimus ea praesentium aut animi officia, earum eum atque, dolorem
+                    perspiciatis sapiente repellendus ipsa quo! Quisquam dolorum possimus pariatur sapiente nostrum
+                    vitae excepturi architecto eum quae repudiandae odit ipsa eos earum placeat ducimus eius accusamus,
+                    ipsum minus aliquid dolorem commodi consectetur. Vel ut quod dolores dicta. Veniam repellendus
+                    tempore atque neque laborum, doloremque, velit perferendis, in optio nostrum voluptatem et ut. Nisi,
+                    tempore sint odio reprehenderit porro tempora, quo amet sapiente vero quaerat obcaecati, labore quos
+                    ut. Optio earum est natus quos quibusdam commodi dolores distinctio harum autem eligendi esse minus
+                    ipsam excepturi ipsum alias ab perferendis assumenda quod dignissimos, cum veritatis, aperiam sunt
+                    maxime iusto? Excepturi neque earum tenetur. Nam, enim dignissimos modi debitis magnam incidunt
+                    eveniet veniam laborum alias itaque. Quas impedit at cupiditate ex sapiente corporis quaerat vel cum
+                    iste! A aliquam iusto nostrum praesentium, reprehenderit veritatis? Aspernatur quia impedit magni
+                    quasi nesciunt distinctio nemo, repellendus velit accusamus quas itaque ex dolores maiores totam
+                    similique consectetur eligendi facilis, fugit voluptas veniam hic? Esse illo illum recusandae autem
+                    provident. At tempora dicta doloremque quisquam officiis porro ipsam soluta necessitatibus repellat
+                    dolorem quis inventore asperiores aperiam in voluptatum facilis, sequi delectus eius dolores
+                    reprehenderit iste, provident eum explicabo libero! Adipisci reprehenderit fuga nisi libero
+                    quibusdam, deleniti pariatur reiciendis velit accusantium, asperiores impedit tempora vel ea magni
+                    soluta, omnis ratione ad ipsa harum. Delectus natus, eaque aspernatur accusantium non itaque hic
+                    explicabo soluta. Et rem quaerat quos voluptatem voluptatibus, odio mollitia magni, omnis tempora
+                    reprehenderit vero perspiciatis porro repudiandae laboriosam ex itaque harum officia quasi illo
+                    error officiis excepturi distinctio sunt cupiditate! Quis mollitia laudantium ea aliquam excepturi
+                    dolores veniam odio, sequi labore necessitatibus. Porro maxime pariatur voluptatum ea voluptates quo
+                    dicta quod eos perspiciatis, culpa rem nihil alias. Voluptatem mollitia corporis similique impedit
+                    voluptatum accusamus ab dolor et corrupti modi aliquid, tenetur, temporibus, animi earum quas
+                    aliquam aperiam ea voluptas rerum quae suscipit veritatis adipisci soluta? Repudiandae in laborum
+                    fuga, placeat inventore ut repellendus, accusamus, voluptatem impedit error vitae dolorem.
+                    Necessitatibus, distinctio? Cumque perspiciatis non a quasi, cum dolor? Illo, tenetur dignissimos.
+                    Ducimus voluptatibus ullam officiis?
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Understood</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 가운데에 배치하는 모달 -->
+    <!-- Vertically centered modal -->
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#longmodalCenter">
+        Vertically centered scrollable modal
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade " id="longmodalCenter" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="longmodalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="longmodalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+
+                    <!-- 모달안의 툴팁과 팝오버 -->
+                    <h2 class="fs-5">Popover in a modal</h2>
+                    <p>This <a href="#" role="button" class="btn btn-secondary" data-bs-toggle="popover"
+                            title="Popover title"
+                            data-bs-content="Popover body content is set in this attribute.">button</a> triggers a
+                        popover on click.</p>
+                    <hr>
+                    <h2 class="fs-5">Tooltips in a modal</h2>
+                    <p><a href="#" data-bs-toggle="tooltip" title="Tooltip">This link</a> and <a href="#"
+                            data-bs-toggle="tooltip" title="Tooltip">that link</a> have tooltips on hover.</p>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Understood</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <hr>
+    <hr>
+    <hr>
+
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+        data-bs-whatever="@mdo">Open modal for @mdo</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+        data-bs-whatever="@fat">Open modal for @fat</button>
+    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+        data-bs-whatever="@getbootstrap">Open modal for @getbootstrap</button>
+
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">New message</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="recipient-name" class="col-form-label">Recipient:</label>
+                            <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label">Message:</label>
+                            <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Send message</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    <!-- 모달간 토글 -->
+    <div class="modal fade" id="exampleModalToggle" aria-hidden="true" aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel">Modal 1</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Show a second modal and hide this one with the button below.
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle2" data-bs-toggle="modal">Open second modal</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade" id="exampleModalToggle2" aria-hidden="true" aria-labelledby="exampleModalToggleLabel2" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h1 class="modal-title fs-5" id="exampleModalToggleLabel2">Modal 2</h1>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              Hide this modal and show the first with the button below.
+            </div>
+            <div class="modal-footer">
+              <button class="btn btn-primary" data-bs-target="#exampleModalToggle" data-bs-toggle="modal">Back to first</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="btn btn-primary" data-bs-toggle="modal" href="#exampleModalToggle" role="button">Open first modal</a>
+
+
+
+      <!-- 모달의 크기조절
+        <div class="modal-dialog modal-xl">...</div>
+        <div class="modal-dialog modal-lg">...</div>
+        <div class="modal-dialog modal-sm">...</div>
+
+
+    -->
+
+
+
+
+
+
+
+
+
+    <br><br><br><br><br><br>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script> -->
+    <script type="text/javascript" src="bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
+
+    <script>
+        const myModal = document.getElementById('myModal')
+        const myInput = document.getElementById('myInput')
+
+        myModal.addEventListener('shown.bs.modal', () => {
+            myInput.focus()
+        })
+    </script>
+
+
+    <script>
+        // 다양한 모달
+        const exampleModal = document.getElementById('exampleModal')
+        exampleModal.addEventListener('show.bs.modal', event => {
+            // Button that triggered the modal
+            const button = event.relatedTarget
+            // Extract info from data-bs-* attributes
+            const recipient = button.getAttribute('data-bs-whatever')
+            // If necessary, you could initiate an AJAX request here
+            // and then do the updating in a callback.
+            //
+            // Update the modal's content.
+            const modalTitle = exampleModal.querySelector('.modal-title')
+            const modalBodyInput = exampleModal.querySelector('.modal-body input')
+
+            modalTitle.textContent = `New message to ${recipient}`
+            modalBodyInput.value = recipient
+        })
+    </script>
+</body>
+
+</html>

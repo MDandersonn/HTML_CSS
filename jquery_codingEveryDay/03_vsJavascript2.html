@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+</head>
+<style>
+    li{    
+        border: 1px solid;
+        list-style: none;
+        float:left;
+        padding :40px;
+    }
+    .selected{
+        background-color: lightcoral;
+    }
+</style>
+
+<body>
+   <ul>
+       <li>html</li>
+       <li class='selected'>css</li>
+       <li>javascript</li>
+       <li>jQuery</li>
+   </ul>
+    
+    <script>
+        document.addEventListener("DOMContentLoaded",()=>{
+            var selectL = document.querySelectorAll('li');
+            selectL.forEach((item)=>{
+                item.addEventListener('click',()=>{
+                    selectL.forEach((other)=>{
+                      other.className='';  
+                    })
+                    item.className='selected';
+                    
+                })
+            })
+            
+        })
+    
+    </script>
+</body>
+    
+</html>

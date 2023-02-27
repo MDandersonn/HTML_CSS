@@ -1,0 +1,81 @@
+h1,p,.g{
+    border: 4px solid #222;
+    padding:20px;
+    margin:20px;
+    background-color: rgba(240, 243, 138, 0.481);
+    
+}
+span{
+    border: 3px solid hsla(240, 100%, 50%, 0.793);
+    color: red;
+    
+}
+.t0{
+    border: 4px solid #222;
+    padding:0px;
+    margin:0px;
+    background-color: rgba(250, 235, 215, 0.481);
+}
+
+.t1{
+    background-color: rgba(52, 134, 57, 0.311);
+    padding:30px;
+    margin:30px;
+}
+.t2{
+    background-color: rgba(0, 119, 255, 0.311);
+    padding:0px;
+    margin:0px;
+}
+
+/* 콘텐츠영역을 둘러싼 패딩영역
+    패딩영역은 콘텐츠영역과 테두리 사이의 영역을 말하고
+    마진은 다른박스모델과 박스모델사이의 여백을 말함.
+*/
+
+.box{
+    /* 이러면 컨텐츠크기만 200x200이다. */
+    width:200px;
+    height: 200px;
+    padding:20px;
+    border: 10px solid #ccc;
+}
+
+.box2{
+   /* border까지 다 쳐서 최종크기가 200x200 */
+    width:200px;
+    height: 200px;
+    padding:20px;
+    border: 10px solid #ccc;
+    box-sizing: border-box;
+    
+}
+
+.box3{
+   /* 컨텐트박스크기만 200 */
+    width:200px;
+    height: 200px;
+    padding:20px;
+    border: 10px solid #ccc;
+    box-sizing: content-box;
+    
+}
+
+/*border를 지정할떄는 순서를 지켜야함 보더스타일 > 보더두께 > 보더색상 */
+.box4{
+                  /* 순서대로 top right bottom left 지정 */
+    border-style: dashed double solid dotted;
+    border-width: thick;
+    border-color: blue;
+    width:200px;
+    height: 200px;
+
+    /* 꼭지점 둥글게 */
+    border-radius: 30px;
+}
+
+.h11{
+    padding-bottom: 5px;
+    border-bottom: 3px solid #222;
+}
+

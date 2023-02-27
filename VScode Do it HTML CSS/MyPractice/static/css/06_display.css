@@ -1,0 +1,114 @@
+nav ul{
+    list-style: none;
+}
+
+nav ul li{
+    /* 블록영역을 인라인영역으로 바꾸는것.
+    형태는 인라인  각요소를 블록레벨요소처럼 사용*/
+
+    display: inline-block;
+    /* display: inline; */
+    /* 이게기본값  */
+    /* display:block; */
+    border: 3px solid #222;
+    padding: 30px;
+    margin:0px 30px;
+}
+
+.cont1{
+  border:3px solid;
+  background-color: skyblue;
+
+}
+.r1,.r2,.r3{
+  height: 100px;
+  width: 100px;
+  border:1px solid;
+  background-color: yellow;
+  display: inline-block;
+
+}
+
+
+
+#box1{
+
+    background-color: yellow;
+    float: left;
+}
+#box2{
+    background-color: green;
+    float: right;
+}
+#box3{
+    background-color: skyblue;
+    /* float의 영향을 받지않게됨 */
+    clear:left;
+}
+#box4{
+    background-color: red;
+
+}
+
+h2,h1{
+    margin:0px;
+}
+*{
+    box-sizing: border-box;
+}
+#container{
+    width:1200px;
+    height:820;
+    /* 좌우 마진을 auto로하면 중앙에배치가능 */
+    margin:20px auto;
+
+}
+
+#header{
+    background-color: antiquewhite;
+    text-align: center;
+    margin: 0px;
+    height: 120px;
+    width: 100%;
+    float: none;
+}
+
+
+#left{
+    background-color: yellow;
+    width: 250px;
+    height: 600px;
+    float: left;
+
+}
+
+/* 계속왼쪽으로 차곡차곡 쌓여가야함 */
+#contents{
+    background-color: blue;
+    text-align: center;
+    width: 800px;
+    height:600px;
+
+    float: left;
+
+}
+
+
+#right{
+    background-color: green;
+    width:150px;
+    height: 600px;
+
+    float:right;
+
+
+}
+#footer{
+
+    height:100px;
+    width:100%;
+    background-color: violet;
+    /*  윗부분이 floating이라서 해제를 해줘야함. */
+    clear: both;
+
+}

@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="bootstrap-5.2.3-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="css/site.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous"> -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
+    <style>
+
+    </style>
+</head>
+
+<body>
+    <div class="bg-warning  opacity-50">투명도</div>
+    <a class="text-decoration-none" href="">밑줄 제거된 링크</a>
+    <div class="bg-warning text-decoration-underline">밑줄</div>
+    <div class="bg-warning  text-decoration-line-through">관통줄</div>
+    <p class="bg-warning  text-opacity-75">왜안되지?</p>
+    <!-- text-black같이 텍스트색상을 입혀야된다. -->
+
+    <!-- 배경색 -->
+    <div class="p-3 mb-2 bg-primary text-white">.bg-primary</div>
+    <div class="p-3 mb-2 bg-secondary text-white">.bg-secondary</div>
+    <div class="p-3 mb-2 bg-success text-white">.bg-success</div>
+    <div class="p-3 mb-2 bg-danger text-white">.bg-danger</div>
+    <div class="p-3 mb-2 bg-warning text-dark">.bg-warning</div>
+    <div class="p-3 mb-2 bg-info text-dark">.bg-info</div>
+    <div class="p-3 mb-2 bg-light text-dark">.bg-light</div>
+    <div class="p-3 mb-2 bg-dark text-white">.bg-dark</div>
+    <div class="p-3 mb-2 bg-body text-dark">.bg-body</div>
+    <div class="p-3 mb-2 bg-white text-dark">.bg-white</div>
+    <div class="p-3 mb-2 bg-transparent text-dark">.bg-transparent</div>
+    <hr>
+    <!-- 배경 그라데이션 입힌거 -->
+    <div class="p-3 mb-2 bg-primary text-white bg-gradient">.bg-primary</div>
+    <div class="p-3 mb-2 bg-secondary text-white bg-gradient">.bg-secondary</div>
+    <div class="p-3 mb-2 bg-success text-white bg-gradient">.bg-success</div>
+    <div class="p-3 mb-2 bg-danger text-white bg-gradient ">.bg-danger</div>
+    <div class="p-3 mb-2 bg-warning text-dark bg-gradient ">.bg-warning</div>
+    <div class="p-3 mb-2 bg-info text-dark bg-gradient ">.bg-info</div>
+    <div class="p-3 mb-2 bg-light text-dark bg-gradient ">.bg-light</div>
+    <div class="p-3 mb-2 bg-dark text-white bg-gradient ">.bg-dark</div>
+    <div class="p-3 mb-2 bg-body text-dark bg-gradient ">.bg-body</div>
+    <div class="p-3 mb-2 bg-white text-dark bg-gradient ">.bg-white</div>
+    <div class="p-3 mb-2 bg-transparent text-dark bg-gradient ">.bg-transparent</div>
+    <hr>
+    <div class="bg-success p-2 text-white">This is default success background</div>
+    <div class="bg-success p-2" style="--bs-bg-opacity: .5;">This is 50% opacity success background</div>
+    <hr>
+    <div class="bg-success p-2 text-white">This is default success background</div>
+    <div class="bg-success p-2 text-white bg-opacity-75">This is 75% opacity success background</div>
+    <div class="bg-success p-2 text-dark bg-opacity-50">This is 50% opacity success background</div>
+    <div class="bg-success p-2 text-dark bg-opacity-25">This is 25% opacity success background</div>
+    <div class="bg-success p-2 text-dark bg-opacity-10">This is 10% opacity success background</div>
+
+    <hr>
+
+    <!-- 테두리.  -->
+    <span class="border m-2">ㅁ</span>
+    <span class="border-top m-2">ㅁ</span>
+    <span class="border-end m-2">ㅁ</span>
+    <span class="border-bottom m-2">ㅁ</span>
+    <span class="border-start m-2">ㅁ</span>
+    <hr>
+    <!-- 반전테두리 -->
+    <span class="border border-0 m-2">ㅁ</span>
+    <span class="border border-top-0 m-2">ㅁ</span>
+    <span class="border border-end-0 m-2">ㅁ</span>
+    <span class="border border-bottom-0 m-2">ㅁ</span>
+    <span class="border border-start-0 m-2">ㅁ</span>
+
+    <hr>
+    <!-- 테두리 색상 -->
+    <span class="border border-primary">ㅁ</span>
+    <span class="border border-secondary">ㅁ</span>
+    <span class="border border-success">ㅁ</span>
+    <span class="border border-danger">ㅁ</span>
+    <span class="border border-warning">ㅁ</span>
+    <span class="border border-info">ㅁ</span>
+    <span class="border border-light">ㅁ</span>
+    <span class="border border-dark">ㅁ</span>
+    <span class="border border-white">ㅁ</span>
+
+    <hr>
+    <div class="mb-4">
+        <label for="exampleFormControlInput1" class="form-label">Email address</label>
+        <input type="email" class="form-control border-success" id="exampleFormControlInput1"
+            placeholder="name@example.com">
+    </div>
+
+    <div class="h4 pb-2 mb-4 text-danger border-bottom border-danger">
+        Dangerous heading
+    </div>
+
+    <div class="p-3 bg-info bg-opacity-10 border border-info border-start-0 rounded-end">
+        Changing border color and width
+    </div>
+
+    <!-- 테두리투명 -->
+    <div class="border border-success p-2 mb-2">This is default success border</div>
+    <div class="border border-success p-2" style="--bs-border-opacity: .5;">This is 50% opacity success border</div>
+
+    <hr>
+    <div class="border border-success p-2 mb-2">This is default success border</div>
+    <div class="border border-success p-2 mb-2 border-opacity-75">This is 75% opacity success border</div>
+    <div class="border border-success p-2 mb-2 border-opacity-50">This is 50% opacity success border</div>
+    <div class="border border-success p-2 mb-2 border-opacity-25">This is 25% opacity success border</div>
+    <div class="border border-success p-2 border-opacity-10">This is 10% opacity success border</div>
+
+    <!-- 테두리 두께 -->
+    <hr>
+
+    <span class="border border-1">ㅁ</span>
+    <span class="border border-2">ㅁ</span>
+    <span class="border border-3">ㅁ</span>
+    <span class="border border-4">ㅁ</span>
+    <span class="border border-5">ㅁ</span>
+
+    <hr>
+
+    <!-- 모서리형태 -->
+    <img src="./img/black.jpg" class="w-25 m-2 rounded" alt="...">
+    <img src="./img/black.jpg" class="w-25 m-2 rounded-top" alt="...">
+    <img src="./img/black.jpg" class="w-25 m-2 rounded-end" alt="...">
+    <img src="./img/black.jpg" class="w-25 m-2 rounded-bottom" alt="...">
+    <img src="./img/black.jpg" class="w-25 m-2 rounded-start" alt="...">
+    <img src="./img/black.jpg" class="w-25 m-2 rounded-circle" alt="...">
+    <img src="./img/black.jpg" class="w-25 m-2 rounded-pill" alt="...">
+
+    <hr>
+    <hr>
+
+    <!-- 모서리 둥근정도 -->
+
+    <img src="./img/black.jpg" class="w-25 m-2 rounded-0" alt="...">
+    <img src="./img/black.jpg" class="w-25 m-2 rounded-1" alt="...">
+    <img src="./img/black.jpg" class="w-25 m-2 rounded-2" alt="...">
+    <img src="./img/black.jpg" class="w-25 m-2 rounded-3" alt="...">
+    <img src="./img/black.jpg" class="w-25 m-2 rounded-4" alt="...">
+    <img src="./img/black.jpg" class="w-25 m-2 rounded-5" alt="...">
+
+    <!-- 글자 색상 -->
+    <p class="text-primary">.text-primary</p>
+    <p class="text-secondary">.text-secondary</p>
+    <p class="text-success">.text-success</p>
+    <p class="text-danger">.text-danger</p>
+    <p class="text-warning bg-dark">.text-warning</p>
+    <p class="text-info bg-dark">.text-info</p>
+    <p class="text-light bg-dark">.text-light</p>
+    <p class="text-dark">.text-dark</p>
+    <p class="text-body">.text-body</p>
+    <p class="text-muted">.text-muted</p>
+    <p class="text-white bg-dark">.text-white</p>
+    <p class="text-black-50">.text-black-50</p>
+    <p class="text-white-50 bg-dark">.text-white-50</p>
+
+    <!-- 글자 투명도-->
+
+    <div class="text-primary">This is default primary text</div>
+    <div class="text-primary" style="--bs-text-opacity: .5;">This is 50% opacity primary text</div>
+    <hr>
+    <div class="text-primary">This is default primary text</div>
+    <div class="text-primary text-opacity-75">This is 75% opacity primary text</div>
+    <div class="text-primary text-opacity-50">This is 50% opacity primary text</div>
+    <div class="text-primary text-opacity-25">This is 25% opacity primary text</div>
+    <p class=" bg-warning text-black text-opacity-25">된다. 텍스트 색상을 주어야하는군</p>
+
+
+    <hr>
+    <!-- 디스플레이 -->
+    <!-- 인라인 -->
+    <div class="d-inline p-2 text-bg-primary">d-inline</div>
+    <div class="d-inline p-2 text-bg-dark">d-inline</div>
+    <hr>
+    <!-- 블록  -->
+    <span class="d-block p-2 text-bg-primary">d-block</span>
+    <span class="d-block p-2 text-bg-dark">d-block</span>
+
+    <!-- 요소숨기기 -->
+    <div class="d-lg-none">hide on lg and wider screens</div>
+    <div class="d-none d-lg-block">hide on screens smaller than lg</div>
+    <hr>
+
+    <!-- 인쇄할때의 표시 -->
+    <div class="d-print-none">Screen Only (Hide on print only)</div>
+    <div class="d-none d-print-block">Print Only (Hide on screen only)</div>
+    <div class="d-none d-lg-block d-print-block">Hide up to large on screen, but always show on print</div>
+
+    <hr>
+    <hr>
+
+    <!-- 상호작용 -->
+    <!-- 누르면 전체선택됨 -->
+    <p class="user-select-all">This paragraph will be entirely selected when clicked by the user.</p>
+    <p class="user-select-auto">This paragraph has default select behavior.</p>
+
+    <!-- 누르지못함.  못퍼감-->
+    <p class="user-select-none">This paragraph will not be selectable when clicked by the user.</p>
+
+    <hr>
+
+    <!-- tabindex = "-1" (키보드 포커스를 받지 못하도록 방지) 및 aria-disabled = "true" (사실을 전달하기 위해)와 같은 속성을 추가해야 할 수 있습니다.
+ -->
+    <p><a href="#" class="pe-none" tabindex="-1" aria-disabled="true">This link</a> can not be clicked.</p>
+    <p><a href="#" class="pe-auto">This link</a> can be clicked (this is default behavior).</p>
+
+    <p class="pe-none">
+        <a href="#" tabindex="-1" aria-disabled="true">This link</a> can not be clicked because the
+        <code>pointer-events</code> property is inherited from its parent. However, <a href="#" class="pe-auto">this
+            link</a> has a <code>pe-auto</code> class and can be clicked.
+    </p>
+
+
+    <!-- 불투명도 -->
+    <div class="bd-example d-sm-flex">
+        <div class="opacity-100 p-3 m-2 bg-primary text-light fw-bold rounded">100%</div>
+        <div class="opacity-75 p-3 m-2 bg-primary text-light fw-bold rounded">75%</div>
+        <div class="opacity-50 p-3 m-2 bg-primary text-light fw-bold rounded">50%</div>
+        <div class="opacity-25 p-3 m-2 bg-primary text-light fw-bold rounded">25%</div>
+    </div>
+    <hr>
+    <hr>
+    <!-- 오버플로우 -->
+    <div class="bd-example d-md-flex">
+        <div class="overflow-auto p-3 mb-3 mb-md-0 me-md-3 bg-light" style="max-width: 260px; max-height: 100px;">
+            This is an example of using <code>.overflow-auto</code> on an element with set width and height dimensions.
+            By design, this content will vertically scroll.
+        </div>
+        <div class="overflow-hidden p-3 mb-3 mb-md-0 me-md-3 bg-light" style="max-width: 260px; max-height: 100px;">
+            This is an example of using <code>.overflow-hidden</code> on an element with set width and height
+            dimensions.
+        </div>
+        <div class="overflow-visible p-3 mb-3 mb-md-0 me-md-3 bg-light" style="max-width: 260px; max-height: 100px;">
+            This is an example of using <code>.overflow-visible</code> on an element with set width and height
+            dimensions.
+        </div>
+        <div class="overflow-scroll p-3 bg-light" style="max-width: 260px; max-height: 100px;">
+            This is an example of using <code>.overflow-scroll</code> on an element with set width and height
+            dimensions.
+        </div>
+    </div>
+
+
+    <!-- 위치 -->
+    <div class="position-static">...</div>
+    <div class="position-relative">...</div>
+    <div class="position-absolute">...</div>
+    <div class="position-fixed">...</div>
+    <div class="position-sticky">...</div>
+
+    <hr>
+    <!-- 
+    top - for the vertical top position
+start - for the horizontal left position (in LTR)
+bottom - for the vertical bottom position
+end - for the horizontal right position (in LTR)
+Where position is one of:
+
+0 - for 0 edge position
+50 - for 50% edge position
+100 - for 100% edge position
+ -->
+    <div class="bd-example bd-example-position-utils">
+        <div class="position-relative">
+            <div class="position-absolute top-0 start-0">탑0스타트0</div>
+            <div class="position-absolute top-0 end-0">탑0엔드0</div>
+            <div class="position-absolute top-50 start-50">탑에서50왼쪽에서50</div>
+            <div class="position-absolute bottom-50 end-50">바텀에서50오른쪽에서50</div>
+            <div class="position-absolute bottom-0 start-0">바텀0스타트0</div>
+            <div class="position-absolute bottom-0 end-0">바텀0 엔드0</div>
+        </div>
+    </div>
+    <hr>
+    <hr>
+    <div class="bd-example bd-example-position-utils">
+        <div class="position-relative">
+            <div class="position-absolute top-0 start-0 translate-middle">ㅁ</div>
+            <div class="position-absolute top-0 start-50 translate-middle">ㅁ</div>
+            <div class="position-absolute top-0 start-100 translate-middle">ㅁ</div>
+            <div class="position-absolute top-50 start-0 translate-middle">ㅁ</div>
+            <div class="position-absolute top-50 start-50 translate-middle">ㅁ</div>
+            <div class="position-absolute top-50 start-100 translate-middle">ㅁ</div>
+            <div class="position-absolute top-100 start-0 translate-middle">ㅁ</div>
+            <div class="position-absolute top-100 start-50 translate-middle">ㅁ</div>
+            <div class="position-absolute top-100 start-100 translate-middle">ㅁ</div>
+        </div>
+    </div>
+
+
+    <hr>
+    <h1>예시</h1>
+    <div class="bd-example bd-example-position-examples d-flex justify-content-around">
+        <button type="button" class="btn btn-primary position-relative">
+            Mails <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-secondary">+99
+                <span class="visually-hidden">unread messages</span></span>
+        </button>
+
+        <button type="button" class="btn btn-dark position-relative">
+            Marker <svg width="1em" height="1em" viewBox="0 0 16 16"
+                class="position-absolute top-100 start-50 translate-middle mt-1" fill="#212529"
+                xmlns="http://www.w3.org/2000/svg">
+                <path
+                    d="M7.247 11.14L2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z">
+                </path>
+            </svg>
+        </button>
+
+        <button type="button" class="btn btn-primary position-relative">
+            Alerts <span
+                class="position-absolute top-0 start-100 translate-middle badge border border-light rounded-circle bg-danger p-2"><span
+                    class="visually-hidden">unread messages</span></span>
+        </button>
+    </div>
+
+
+
+<hr>
+
+<div class="bd-example bd-example-position-examples">
+    <div class="position-relative m-4">
+      <div class="progress" style="height: 1px;">
+        <div class="progress-bar" role="progressbar" aria-label="Progress" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+      </div>
+      <button type="button" class="position-absolute top-0 start-0 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">1</button>
+      <button type="button" class="position-absolute top-0 start-50 translate-middle btn btn-sm btn-primary rounded-pill" style="width: 2rem; height:2rem;">2</button>
+      <button type="button" class="position-absolute top-0 start-100 translate-middle btn btn-sm btn-secondary rounded-pill" style="width: 2rem; height:2rem;">3</button>
+    </div>
+</div>
+
+
+<hr>
+<!-- 그림자-->
+<div class="shadow-none p-3 mb-5 bg-light rounded">No shadow</div>
+<div class="shadow-sm p-3 mb-5 bg-body rounded">Small shadow</div>
+<div class="shadow p-3 mb-5 bg-body rounded">Regular shadow</div>
+<div class="shadow-lg p-3 mb-5 bg-body rounded">Larger shadow</div>
+
+<hr>
+<!-- 사이징 -->
+<div class="w-25 p-3 m-2" style="background-color: #eee;">Width 25%</div>
+<div class="w-50 p-3 m-2" style="background-color: #eee;">Width 50%</div>
+<div class="w-75 p-3 m-2" style="background-color: #eee;">Width 75%</div>
+<div class="w-100 p-3 m-2" style="background-color: #eee;">Width 100%</div>
+<div class="w-auto p-3 m-2" style="background-color: #eee;">Width auto</div>
+
+<hr>
+<div style="height: 100px; background-color: rgba(255,0,0,0.1);">
+    <div class="h-25 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 25%</div>
+    <div class="h-50 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 50%</div>
+    <div class="h-75 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 75%</div>
+    <div class="h-100 d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height 100%</div>
+    <div class="h-auto d-inline-block" style="width: 120px; background-color: rgba(0,0,255,.1)">Height auto</div>
+  </div>
+
+<hr>
+
+<div style="height: 100px; background-color: rgba(255,0,0,.1);">
+    <div class="mh-100" style="width: 100px; height: 200px; background-color: rgba(0,0,255,.1);">Max-height 100%</div>
+  </div>
+  
+  <hr>
+  <!-- 마진값 -->
+  <!-- 
+m - for classes that set margin
+p - for classes that set padding
+Where sides is one of:
+
+t - for classes that set margin-top or padding-top
+b - for classes that set margin-bottom or padding-bottom
+s - (start) for classes that set margin-left or padding-left in LTR, margin-right or padding-right in RTL
+e - (end) for classes that set margin-right or padding-right in LTR, margin-left or padding-left in RTL
+x - for classes that set both *-left and *-right
+y - for classes that set both *-top and *-bottom
+blank - for classes that set a margin or padding on all 4 sides of the element
+Where size is one of:
+
+0 - for classes that eliminate the margin or padding by setting it to 0
+1 - (by default) for classes that set the margin or padding to $spacer * .25
+2 - (by default) for classes that set the margin or padding to $spacer * .5
+3 - (by default) for classes that set the margin or padding to $spacer
+4 - (by default) for classes that set the margin or padding to $spacer * 1.5
+5 - (by default) for classes that set the margin or padding to $spacer * 3
+auto - for classes that set the margin to auto
+
+
+   -->
+   <!-- 세로중앙 -->
+   <div class="bd-example">
+    <div class="mx-auto" style="width: 200px; background-color: rgba(86,61,124,.15);">
+      Centered element
+    </div>
+  </div>
+<hr>
+
+  <!-- 갭-->
+  <div class="d-grid gap-3">
+    <div class="p-2 bg-light border">Grid item 1</div>
+    <div class="p-2 bg-light border">Grid item 2</div>
+    <div class="p-2 bg-light border">Grid item 3</div>
+  </div>
+    
+<hr>
+  <!-- 텍스트 정렬
+ -->
+
+ <p class="text-start">Start aligned text on all viewport sizes.</p>
+<p class="text-center">Center aligned text on all viewport sizes.</p>
+<p class="text-end">End aligned text on all viewport sizes.</p>
+
+<p class="text-sm-start">Start aligned text on viewports sized SM (small) or wider.</p>
+<p class="text-md-start">Start aligned text on viewports sized MD (medium) or wider.</p>
+<p class="text-lg-start">Start aligned text on viewports sized LG (large) or wider.</p>
+<p class="text-xl-start">Start aligned text on viewports sized XL (extra-large) or wider.</p>
+  
+<!-- 텍스트 줄바꿈과 오버플로우 -->
+<div class="badge bg-primary text-wrap" style="width: 6rem;">
+    This text should wrap.
+  </div>
+
+  <hr>
+
+
+  <div class="text-nowrap bg-light border" style="width: 8rem;">
+    This text should overflow the parent.
+  </div>
+
+
+<!-- 단어기준줄바꿈 -->
+<p class="text-break">mmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm</p>
+
+<!-- 대소문자 -->
+<p class="text-lowercase">Lowercased text.</p>
+<p class="text-uppercase">Uppercased text.</p>
+<p class="text-capitalize">CapiTaliZed text.</p>
+
+<hr>
+<!-- 글꼴크기 -->
+<p class="fs-1">.fs-1 text</p>
+<p class="fs-2">.fs-2 text</p>
+<p class="fs-3">.fs-3 text</p>
+<p class="fs-4">.fs-4 text</p>
+<p class="fs-5">.fs-5 text</p>
+<p class="fs-6">.fs-6 text</p>
+
+<hr>
+<!-- 글꼴굴기 기울임체 -->
+<p class="fw-bold">Bold text.</p>
+<p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
+<p class="fw-semibold">Semibold weight text.</p>
+<p class="fw-normal">Normal weight text.</p>
+<p class="fw-light">Light weight text.</p>
+<p class="fw-lighter">Lighter weight text (relative to the parent element).</p>
+<p class="fst-italic">Italic text.</p>
+<p class="fst-normal">Text with normal font style</p>
+
+<hr>
+<!-- 행간 -->
+<p class="lh-1">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+<p class="lh-sm">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+<p class="lh-base">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+<p class="lh-lg">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
+
+<!-- 텍스트꾸미기 -->
+<p class="text-decoration-underline">This text has a line underneath it.</p>
+<p class="text-decoration-line-through">This text has a line going through it.</p>
+<a href="#" class="text-decoration-none">This link has its text decoration removed</a>
+
+
+
+
+    <br><br><br><br><br><br>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script> -->
+    <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script> -->
+    <script type="text/javascript" src="bootstrap-5.2.3-dist/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>

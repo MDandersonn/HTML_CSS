@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <!-- 데이터를 전송하는방식
+    get방식: 비밀번호가 url에 그대로 노출된다.
+    post방식: url로 전달하는게아니라 감춰서 전달한다.
+
+    form을이용해서 데이터전송할때는 100% post방식을 사용하고
+    서버쪽 엔지니어가 아니라면, 어떻게전송해야하는지 의사결정은 서버엔지니어의권한
+    그쪽에서 데이터를 get방식으로해달라하면 get으로바꾸면됨
+
+   -->
+
+    <form action="http://localhost/login.php" method="post">
+      <p>
+
+        <label for="id_txt">아이디:</label>
+        <input id="id_txt" type="text" name="id" value="기본값입니다">
+      </p>
+
+      <p>
+        <label for="password">비밀번호:</label>
+        <input id='password' type="password" name="pwd">
+      </p>
+
+      <input type="submit">
+      </form>
+
+      <br><hr><br>
+
+
+
+
+
+  </body>
+</html>

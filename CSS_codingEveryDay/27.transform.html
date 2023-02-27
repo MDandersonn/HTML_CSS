@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    
+    <style>
+        h1{
+            background-color: deepskyblue;
+            color: white;
+            display:inline-block;
+            padding:5px;
+            font-size: 3rem;
+            margin: 100px;
+/*            scaleX : x축으로 2배늘리거나 or 0.5배 축소*/
+/*            scaleY : x축으로 2배늘리거나 or 0.5배 축소*/
+            transform: scaleX(2);
+/*              X,Y를 함께써줘야 둘다적용됨*/
+            transform: scaleY(0.5);
+            transform: scaleX(0.5) scaleY(2);
+            
+/*            축약형*/
+            transform: scale(2,0.5);
+        }
+        
+        .t1{
+            perspective: 100px;
+        }
+        .r1{
+            width: 100px;
+            height: 100px;
+            border :1px solid;
+            background-color: aquamarine;
+            margin: auto;
+            
+        }
+        .r1:hover{
+            
+            transform: rotate(45deg);
+/*                            x축 y축 z축*/
+/*            transform-origin: 0 100% 0;*/
+            transform-origin: left top;
+            
+/*
+            transform-origin: 0 0;
+transform: translate(-100%, 50%) rotate(45deg) translate(100%, -50%);
+*/
+            transition:all 1s;
+        }
+    </style>
+</head>
+<body>
+    <h1>hello transform!</h1>
+    
+    <div class="t1">
+        
+        <div class="r1"></div>
+    </div>
+</body>
+</html>

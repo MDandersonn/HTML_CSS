@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img src="./mountain1.jpg" alt="" width="400px";>
+
+
+    <script>
+        var img = document.querySelector("img");
+        img.onclick = function(){
+            console.log("hello");
+            alert(this.src);
+            alert("이벤트유형: "+event.type +" 이벤트발생위치: "+event.pageX+" , " +event.pageY
+            +"이벤트가 최초로 발생한대상: "+ event.target +" 발생시간: "+event.timeStamp
+            );
+        }
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+<style>
+    #container{
+         perspective: 200px;
+    }
+    
+    #container>div{
+        width:100px;
+        height: 100px;
+        background-color: aqua;
+        border: 1px solid;
+        margin: auto;
+        
+        
+    }
+    
+    .r1{
+        animation: rotate 1.5s infinite;
+        
+    }
+    
+    
+    @keyframes rotate{
+        from{transform: perspective(100px) rotateX(0deg) rotateY(0deg);}
+        50%{ transform: perspective(100px) rotateX(45deg) rotateY(45deg);}
+        to{ transform: perspective(100px) rotateX(180deg) rotateY(180deg);}
+    }
+    
+    .r2:hover{
+       
+        transform:  rotateX(45deg);
+        
+    }
+    
+    
+    
+    </style>
+
+</head>
+
+<body>
+   
+    <div id="container">
+        <div class="r1"></div>
+        <div class="r2"></div>
+        <div class="r3"></div>
+    </div>
+    
+</body>
+</html>

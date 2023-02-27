@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      /*
+      css에서의 주석임
+      */
+
+/* h1태그 처럼 화면전체를 쓰는 블럭은block level element
+a태그 처럼 자기자신만큼 쓰는 블럭은 inline element라한다.
+ */
+
+      #h1{
+        border-width:10px;
+        border-color:blue;
+        border-style:solid;
+        display:inline;
+
+      }
+      #h2{
+        border-width:10px;
+        border-color:blue;
+        border-style:solid;
+      }
+      #h3{
+        border-width:10px;
+        border-color:blue;
+        border-style:solid;
+        display: block;
+      }
+
+      #h4{
+        border:5px solid blue;
+        padding:20px; /*테두리와 텍스트 의 간격*/
+        margin:30px; /*테두리와 테두리사이간격*/
+        display:block; /*화면전체를사용하는 블럭*/
+        width:100px; /*테두리박스의 크기 */
+      }
+
+
+      #a1{
+        /* border:5px solid red; 와 아래는 같다. */
+        border-width:5px;
+        border-color:red;
+        border-style:solid;
+
+      }
+
+      #a2{
+        border-width:5px;
+        border-color:red;
+        border-style:solid;
+        display:block;
+        margin:10px;
+      }
+
+
+      #a3{
+        margin:10px;
+
+
+        border-width:5px;
+        border-color:red;
+        border-style:solid;
+        display:inline;
+      }
+      #a4{
+        margin:10px;
+        border-width:5px;
+        border-color:red;
+        border-style:solid;
+        /* 안보이게하기 */
+        display:none;
+      }
+
+
+      }
+
+    </style>
+
+  </head>
+  <body>
+    <h1>CSS</h1>
+    <h1 id="h1">CSS</h1>
+    <h1 id="h2">CSS</h1>
+    <h1 id="h3">CSS</h1>
+    <h1 id="h4">CSS</h1>
+
+
+
+    <a id="a1", href="https://www.naver.com">Cascading Style Sheets</a> is a style
+
+    <a id="a2", href="https://www.naver.com">Cascading Style Sheets</a>
+    <a id="a3", href="https://www.naver.com">Cascading Style Sheets</a>
+
+    <!-- display :none; 으로 안보이게했음 -->
+    <a id="a4", href="https://www.naver.com">Cascading Style Sheets</a>
+  </body>
+</html>

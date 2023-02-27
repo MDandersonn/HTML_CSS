@@ -1,0 +1,40 @@
+#container{
+    display:grid;
+    /* 칼럼의개수의 크기를지정  */
+                              /* 칼럼너비 */
+    /* grid-template-columns: 200px 200px 200px; */
+                
+                              /* 2fr 2fr 1fr 로 2:1:1비율로 설정할수도있음. */
+                              /* 반복되는값은 repeat(3,1fr)  로 1fr 1fr 1fr 을 표현할수있다.  */
+
+                              /* 비율 */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+
+    /* /* 칼럼의 너비값은 200px 브라우저창이 늘어날수록 칼럼개수가늘어남 */
+    /* grid-template-columns: repeat(auto-fit,200px); */
+
+    /* 최소 200픽셀이라서 공간이남으면브라우저꽉차게 늘린다  */
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+
+
+    /* 공간이 남아도 늘리지않는다 200px */
+    /* grid-template-columns: repeat(auto-fill, minmax(200px,1fr)); */
+
+
+
+                        /* 줄높이 */
+    /* grid-template-rows: 50px; */
+
+    /* 최소한의 높이지정, 글자길이가 늘어날수록 높이도 자동으로커진다. */
+    grid-template-rows: minmax(50px,auto);
+}
+
+.items{
+    padding:10px;
+    background-color: lightgray;
+    border:1px solid;
+
+}
+.items:nth-child(odd){
+    background-color: antiquewhite;
+}

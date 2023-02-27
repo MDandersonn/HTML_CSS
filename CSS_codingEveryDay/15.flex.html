@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+/*        div는기본값은 화면전체를쓰는 블럭레벨엘리먼트이다.*/
+        
+        .container{
+/*            컨테이너에 부여되어야할 속성
+            display
+            flex-direction
+            flex-wrap :플렉스항목의 줄을바꿈
+            flex-flow :위의 direction과 wrap을 한번에 쓰는것
+            justify-content 주축방향정렬방법
+            align-items 교차축방향정렬방법
+            align-contenta 교차축에서 여러줄로 표시된항목의 정렬방법
+            
+            */
+            background-color: aquamarine;
+            height: 300px;
+            display:flex;
+
+/*            row(가로방향)가 기본값이다. column은 세로방향 */
+            flex-direction:row;
+
+        }
+        .item{
+/*            아이템에 부여되어야할 속성
+            order
+            flex-grow
+            flex-shrink
+            flex-basis
+            flex : grow, shrink,basis를 축약해서 한번에쓰는방법
+            flex:1 이면 grow가 1이라는말
+            flex: 1 0 3 ;
+            align-self :교차축에 있는 개별항목의 정렬방법
+            */
+            color:white;
+            background-color: tomato;
+            border:1px solid white;
+            
+/*            grow: 0:기본값, 1: 공간을 n빵해서 나눠차지 */
+/*            flex-grow:1;*/
+        }
+        
+        .item:nth-child(2){
+/*            영역을 1:2:1:1:1 로 차지하게 만듦.*/
+/*            flex-grow:2;*/
+
+/*            basis:크기*/
+            flex-basis: 450px;
+            
+/*            shrink:0 :브라우저화면을 줄일때 크기가 줄어들지않음*/
+/*          flex-shrink: 0;*/
+            
+/*           브라우저화면을 줄일때 1의비율만큼 작아짐*/
+            flex-shrink: 1;
+        }
+        .item:nth-child(1){
+            flex-basis: 450px;
+/*           브라우저화면을 줄일때 2의 비율만큼 작아짐*/
+            flex-shrink:2;
+        }
+    </style>
+</head>
+<body>
+<!--  컨테이너와 아이템이 필요하다.-->
+   <div class="container">
+       <div class="item">1</div>
+       <div class="item">2</div>
+       <div class="item">3</div>
+       <div class="item">4</div>
+       <div class="item">5</div>
+   </div>
+    
+</body>
+</html>

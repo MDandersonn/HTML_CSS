@@ -1,0 +1,66 @@
+*{  box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+p{  
+    width: 500px;
+    height: 200px;
+    background-color: lightgrey;
+    border:  1px solid ;
+    line-height: 2;
+}
+/* 요소의 위치지정 */
+
+/* position기본값은 static인데 소스작성순서대로 배치하는것. */
+#r0{
+    position: static;
+}
+#r1{
+    /* fixed: 모니터에 박힘*/
+    position: fixed;
+    /*오른쪽으로 100이동 */
+    right:-100px;
+
+    /* 밑에서 200px떨어지게 */
+    bottom: 200px;
+}
+
+#r2{
+    /* 화면기준(스크롤가능 */
+    position: absolute;
+    /*오른쪽으로 100이동 */
+    right:-100px;
+
+    /* 밑에서 50px떨어지게 */
+    bottom: 50px;
+
+}
+#r3{
+    /*상대적인  원래위치기준 */
+    position: relative;
+    /*오른쪽으로 100이동 */
+    right:-100px;
+
+    /* 밑에서 50px떨어지게 */
+    bottom: 50px;
+}
+
+
+#r4 {
+top:500px;
+ background:url("../img/logo.png") no-repeat;
+ background-size:cover;
+ width:800px;
+ height:500px;
+ margin:0 auto;
+ position :relative;
+}
+/* 부모요소이거나 상위요소에 position relative가 있어야 기준으로삼을수있다. */
+h1{
+    color: yellow;
+    font-size: 3em;
+    text-shadow: 5px 5px 0 #222;
+    position: absolute;
+    right:100px;
+    bottom:100px;
+}

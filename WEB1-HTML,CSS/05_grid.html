@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <style>
+      #grid{
+        border:5px solid pink;
+        /* 그리드로/ */
+        display:grid;
+        /* 같은비율로  150px 1fr  */
+        /* 2fr 1fr 이면 2:1으로 나눔*/
+        grid-template-columns: 150px 1fr;
+      }
+      div{
+        border:5px solid gray;
+      }
+      span{
+        border:5px solid gray;
+        margin: 10px;
+      }
+    </style>
+  </head>
+
+  <body>
+
+    <div id="grid">
+      <div>NAVIGATION</div> <!-- span을 써도됨 근데 인라인으로적용됨 -->
+      <div>ARTICLE</div>
+      <span>span영역입니다.</span>
+    </div>
+
+    <span>span영역입니다.</span>
+
+  </body>
+</html>

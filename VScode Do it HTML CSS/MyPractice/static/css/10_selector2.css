@@ -1,0 +1,92 @@
+.r1 > div{
+    background-color: yellow;
+}
+
+/* r1하위의 모든 div요소  */
+.r1 div{
+    font-weight: 800;
+    font-style: italic;
+
+}
+/* 자식선택자. 자기자식만 적용 */
+#i1>h1{
+    color: blue;
+}
+/* 자기보다 뒤에오는 형제선택자 */
+h1~p{
+    color: orange;
+}
+
+/* 인접형제선택자 */
+/* h1다음에오는 바로 첫번째 형제만 선택 */
+h1 +p {
+    color :brown;
+}
+
+ul{
+    list-style: none;
+}
+
+li{
+    border : 2px solid;
+    display:inline-block;
+    margin: 10px;
+}
+
+/* li밑에있는 a의 href속성이있는것만 */
+.rr a[href]{
+    color: brown;  
+    /* 밑줄제거 */
+    text-decoration: none;
+
+}
+
+.rr a[href="#"]{
+    /* 마우스갖다대면 손모양으로 안변하게하기 */
+    cursor:default;
+}
+
+
+/* 링크에만들수있는 가상클래스
+:link :visited :hover :active
+이 순서대로 지정해야함!!
+*/
+.navi ul li a:link{
+    color: blueviolet;
+    display:block;
+    font-size:30px;
+    padding:30px;
+    text-decoration: none;
+    text-align:center;
+
+}
+/* visited방문했을경우 바뀌는거 */
+.navi a:visited{
+    color:green;
+}
+/* hover:마우스를 메뉴에 올렸을때 */
+.navi a:hover{
+    background-color: aqua;
+    color: black;
+}
+/* active 마우스를 클릭했을때 */
+.navi a:active{
+    background-color: blue;
+}
+
+
+/* 탭키로 포커싱이 될때 스타일 */
+.navi a:focus{
+    background-color: coral;
+}
+
+/* 가상요소  before/after에 요소를 추가시키는것. */
+li.n1::before,.n1::after{
+    content:"new!!";
+    font-size:small;
+    padding :2px 4px;
+    margin : 0 10px;
+    border-radius: 2px;
+    background-color: red;
+    color:white;
+}

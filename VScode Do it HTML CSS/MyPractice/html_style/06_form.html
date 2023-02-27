@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--폼에서 사용자가 입력하는 정보는 웹브라우저가 서버에 전달. 
+         서버의 프로그램에서 처리 할때 어떤 프로그램에서 그것을 처리해야하는지 알려주는 action 
+        
+         <label> : 이 필드에는 어떤 레이블이 붙어있는지 화면낭독기에 알려주는거
+
+
+
+     -->
+
+    <form action="">
+        <!-- 방식1 label과 분리하는방법-->
+        <label for="user-id">아이디 : </label>
+        <input type="text" id="user-id">
+
+        <!-- 방식2: 전체를 label로 감싸는방법 -->
+        <label>비밀번호 <input type="password"></label>
+
+        <!-- 입력값을 서버로 전송해주는역할 
+        화면에는 로그인으로표시 하는역할은 submit역할-->
+        <input type="submit" value="로그인">
+        <br><br>
+
+        <!-- value는 기본값. -->
+        <label for="order"> 주문상품</label>
+        <input type="text" id="order" value="상품용3kg">
+
+        <!--type="email 이메일형식만 받게할수있따 -->
+        <label for="mail"> 이메일</label>
+        <input type="email" id="mail" >
+
+        <!--type="tel" 모바일에서는 숫자패드가 뜨게할수있따 로 하면. -->
+        <label for="phone"> 전화번호</label>
+        <input type="tel" id="phone" >
+    </form>
+<!-- 체크박스는 복수선택가능 라디오버튼은 하나만 선택가능-->
+<ul>
+    <li>
+        <input type="checkbox" value="s1">선물용3kg
+    </li>
+    <li>
+        <input type="checkbox" value="s2">선물용5kg
+    </li>
+    <li>
+        <input type="checkbox" value="s3">가정용3kg
+    </li>
+    <li>
+        <input type="checkbox" value="s4">가정용5kg
+    </li>
+</ul>
+    
+    <!-- radio는 name을 같게해줘야 하나만 선택가능 
+    
+    checked 는 기본선택값-->
+<ul>
+    <li>
+        <input type="radio" name="gift" value="g1">선물용3kg
+    </li>
+    <li>
+        <input type="radio" name="gift" value="g2" checked>선물용5kg
+    </li>
+    <li>
+        <input type="radio" name="gift" value="g3">가정용3kg
+    </li>
+    <li>
+        <input type="radio" name="gift" value="g4">가정용5kg
+    </li>
+</ul>
+
+
+<ul>
+    <li>
+        <input type="radio" name="gift" value="g1">선물용3kg
+        <input type="number" min="0" max ="5">개 (최대5개)
+    </li>
+    <li>
+        <input type="radio" name="gift" value="g2">선물용5kg
+        <input type="range" min="0" max ="5" value ="1">개 (최대5개)
+    </li>
+    <li>
+        <input type="radio" name="gift" value="g3">가정용3kg
+    </li>
+    <li>
+        <input type="radio" name="gift" value="g4">가정용5kg
+    </li>
+</ul>
+
+<form action="">
+    <h1>날짜지정하기</h1>
+    <input type="date">
+    <input type="month">
+    <input type="week">
+    <h1>시간지정하기</h1>
+    <input type="time">
+    <input type="datetime-local">
+    <h1>범위제한하기</h1>
+    <input type="date" min="2020-02-01" max="2022-02-01">
+    <input type="time" min="14:00" max="16:00">
+
+    <br><hr><br>
+    <!-- 
+        사용자에겐 보이지않지만 ㅜ웹브라우저가 수집한 여러정보를 히든에 담는다. 
+        회원가입한 시간이라든지 ,지역 ,유입경로,   히든필드에 감춰서 서버로 보냄
+     -->
+    <input type="hidden" name="url" id="url" value="사이트를 통한 직접 로그인">
+
+</form>
+
+<!-- 
+    required 필수입력
+    readonly 읽을수만 있게함. 지워지지않음
+    autofocus 양식에 접근했을때 커서가 자동으로  가장먼저 입력하는곳에 커서를 갖다 놓는것
+    placeholder="" 어떤걸 입력하는지 설명 
+
+ -->
+
+ <!-- select 메뉴에서도 value값은 서버로넘겨주는값이고 보이는값은 따로설정.
+    selected: 선택된항목을 의미 (기본값역할도 함 )
+-->
+
+<abbr title="타이틀">이거뭐지</abbr>
+<cite>참고내용</cite>
+<s>취소선</s>
+<u>밑줄표시</u>
+<ins>삽입합니다</ins>
+<del>삭제합니다</del>
+
+<li>1번</li>
+<li>2번</li>
+<li>3번</li>
+    
+<br><hr><br>
+
+<form action="">
+    <h1>레드향주문하기</h1>
+    
+    <fieldset>
+        <legend>배송 정보</legend>
+        <ul>
+            <li>
+                주문상품 <input type="text" value ="상품용 3kg" readonly>
+            </li>
+            <li>
+                이름 <input type="text" required>
+            </li>
+            <li>
+                배송 주소 <input type="text" autofocus>
+            </li>
+            <li>
+                이메일 <input type="email" placeholder="이메일을 입력하세요">
+            </li>
+            <li>
+                연락처 <input type="tel">
+            </li>
+            <li>
+                배송지정 <input type="date"><small>주문일로부터 최소 3일 이후</small>
+            </li>
+
+            <li>
+                <select name="선택">
+                    <option value="옵션1">보이는옵션1</option>
+                    <option value="옵션2" selected >보이는옵션2</option>
+                    <option value="옵션3">보이는옵션3</option>
+                </select>
+            </li>
+            <li>
+                <label for="memo">메모 </label>
+                <textarea name="메모" id="memo" cols="40" rows="4"></textarea>
+            </li>
+        </ul>
+        
+
+    </fieldset>
+    <div>
+        <input type="submit" value="주문하기">
+        <input type="reset" value="취소하기">
+    </div>
+
+
+    <input type="button" value="미디어창열기" onclick = window.open('04_media.html')>
+
+    <br><hr><br>
+    <label>포장여부<input type="text" list="data"></label>
+    
+    <datalist id="data">
+        <option value="package">포장</option>
+        <option value="no package">비포장</option>
+    </datalist>
+
+
+
+</form>
+</body>
+</html> 

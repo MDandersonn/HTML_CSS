@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form action="http://localhost/order.php">
+
+      <p>
+      <h1>색상</h1>
+      <!-- name은 같아야 단일선택 value는 달라야함 -->
+      붉은색:<input type="radio" name="color" value="red">
+      검은색:<input type="radio" name="color" value="black">
+      파란색:<input type="radio" name="color" value="blue">
+      </p>
+
+
+      <p>
+      <h1>사이즈(다중선택)</h1>
+      <!-- name은 같아야 다중선택 -->
+      붉은색:<input type="checkbox" name="color2" value="red">
+      <!-- checked하면 기본으로체크됨 -->
+      검은색:<input type="checkbox" name="color2" value="black" checked>
+      파란색:<input type="checkbox" name="color2" value="blue">
+        </p>
+      <input type="submit">
+    </form>
+  </body>
+</html>

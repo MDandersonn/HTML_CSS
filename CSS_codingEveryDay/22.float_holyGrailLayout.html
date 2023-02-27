@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        header>h1,nav,article,aside,footer{
+            padding:20px;
+        }
+        .container{
+            margin:auto;
+/*            container의 양쪽 border 두개 2를 포함해서 602. 그래야  내부는 600으로 채울수있다*/
+            width: 540px;
+            border:1px solid;
+        }
+        header>h1{
+            border-bottom: 1px solid;
+            margin: 0;
+/*            h1태그가 전체블록이라서 nav가 float해도 위로 못올라온거 */
+/*            display: inline;*/
+            
+            
+        }
+        nav{
+/*            h1태그가 전체블록이니까 그밑에서 가장왼쪽에 배치됨*/
+            width: 120px;
+            float: left;
+            border-right:1px solid;
+            margin:0;
+/*            background-color: antiquewhite*/
+            
+        }
+        article{
+/*            border: 1px solid;*/
+            width: 300px;
+            float:left;
+            border-left: 1px solid;
+            margin-left: -1px;
+            margin-right:0px;
+            border-right: 1px solid;
+            
+        }
+        aside{
+/*            left로 안박힌다면 article의 넓이 크기를 조절해줘야함
+            위에 넓이가 너무크면 위로 올라갈 공간이없어짐.*/
+/*            2px을 당겨서 줄을 맞추고 마진을 1빼주면 가능.*/
+            width: 120px;
+/*            넓이를 고정해주어야 텍스트가 많을수록 높이가 높아지면서 커짐*/
+            float:left;
+            border-left: 1px solid;
+            margin-left: -1px;
+            
+        }
+        footer{
+            clear:both;
+            text-align: center;
+            border-top: 1px solid;
+        }
+    </style>
+</head>
+
+<body>
+   <div class="container">
+        <header>
+            <h1>CSS</h1>
+            <nav>
+               <ul>
+                <li>position</li>
+                <li>float</li>
+                <li>flex</li>
+                <li>position</li>
+                <li>float</li>
+                <li>flex</li>
+                </ul>
+            </nav>
+        </header>
+        <section>
+            <article>
+                <h2>float</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nihil sint cum voluptatum consequuntur tenetur quae ipsam porro unde voluptas velit reprehenderit, corporis eos repudiandae quas sequi, vel ipsa expedita dolore! Distinctio quod repellendus eligendi, laboriosam deserunt officia neque dignissimos animi iure, nostrum nemo enim mollitia, amet magnam? Quia molestiae quam totam optio, omnis placeat id aperiam et expedita accusamus laborum, voluptatibus harum dignissimos ex, eum ut provident voluptatum voluptatem repudiandae. Impedit tempore consectetur doloremque hic atque aliquam blanditiis neque, sint earum aliquid quia optio vitae, maxime nulla vero ratione, saepe obcaecati. Sequi vitae, laborum possimus voluptatem qui culpa magni facere.</p>
+            </article>
+            <aside>adinctio quod repellendus eligendi, laboriosam deserunt officia nequeiure, nostrum nemo enim mollitia,uia molestiae quam totam optio, omnis placeat id aperiam et expedita accusamus laborum, vo</aside>
+        </section>
+
+        <footer>
+            Copyright
+        </footer>
+    </div>
+</body>
+</html>

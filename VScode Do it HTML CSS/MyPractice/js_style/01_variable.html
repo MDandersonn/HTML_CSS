@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // alert("알림창")
+        // confirm("확인창")
+        var result= prompt("이름을 입력하세요","기본값입니다.")
+        document.write(result+"님 안녕하세요");
+
+
+        // undefined :처리되서 결과값이 없는상태
+        // null : 유효하지 않은 값이 지정된 것.
+
+        // HTML로 써지는구나
+        document.write("<ul><li>목록</li></ul>")
+        /*
+        var: 재선언이가능. 재선언할수있는것은 큰문제. , 변수호이스팅 문제
+        
+        그래서 let로 변수를 선언하는것을 추천한다.(블록변수) let은 재선언이안됨
+         let은 호이스팅이 안되서 (초기화되기전에 접근하면 오류남)
+        
+        */
+
+
+        // 함수외부에 선언하고 함수내부에서 초기화하면 함수외부에서사용가능
+       var t1;
+
+       function addnumber(){
+        var v1= 10;
+        let l1=20;
+        t1=40;
+
+        // 전역변수
+        a1=30;
+
+        // 출력가능
+        // console.log(l1);
+
+        // var는 재선언가능
+        var v1=111;
+        console.log(v1);
+
+        // 재선언불가능한 let
+        // let l1=110;
+        // console.log(l1);
+
+       }
+    //    console.log(t1);
+       addnumber();
+       console.log(t1);
+    //    console.log(v1);에러
+    //    console.log(l1);에러
+
+    //    위에처럼 함수를불러와야 a1출력가능
+    console.log(a1);
+
+
+//  함수외부에선 다시선언가능하다.
+    var v1=100;
+    console.log(v1);
+    let l1=110;
+    console.log(l1);
+
+// 변수의 호이스팅
+    // var y;
+    function displayNumber(){
+        // 여기서 에러가나야되는데안남 왜냐하면 var y가 함수가 나오기전에 var y; 선언된걸로 인식하기떄문
+        console.log(y);
+
+        // 에러가난다. let은 호이스팅이 안되서 (초기화되기전에 접근하면 오류남)
+        // console.log(x);
+
+        var y=20;
+        // let x=30;
+    }
+    displayNumber();
+    </script>
+    
+</body>
+</html>

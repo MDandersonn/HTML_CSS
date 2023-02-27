@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <p id='1'>
+        I would like to say:
+    </p>
+
+    <span id='2'>부모로 감싸주세요</span>
+
+    <div>이것도 제거됩니다.</div>
+
+    <p id='3'>치환해주세요</p>
+
+    <input type="text">
+    <script>
+        //        자식으로 삽입  (.append(), .appendTo(), .html(), .prepend(), .prependTo(), .text())
+        $("#1").append("<strong>자식1</strong>");
+        //        방법2
+        $('#1').append($("<strong>").text("자식2"));
+
+        //        형제로 삽입(.after(), .before(), .insertAfter(), .insertBefore())
+
+        $("#1").after("<strong>형제</strong>");
+
+        //        부모로 감싸기 (.unwrap(), .wrap(), .wrapAll(), .wrapInner())
+
+        $('#2').wrap("<div><div><p><em><b>");
+
+        //        삭제 (.detach(), .empty(), .remove(), .unwrap())
+        $('div').remove();
+
+
+        //        치환 (.replaceAll(), .replaceWith())
+        //        교체로들어갈것.replaceAll(target)
+        $('<b>치환해서들어갈것</b>').replaceAll('#3')
+
+
+        //        클래스 (.addClass(), .hasClass(), .removeClass(), .toggleClass())
+        $('b').addClass('class1');
+
+
+
+        //        속성제어 (.attr(), .prop(), .removeAttr(), .removeProp(), .val())
+//        $('input').on('keyup', (event) => {
+////            console.log(this) //window객체?
+//
+//                      console.log(event.target.value);
+//                      console.log($(event.target).val());
+//        })
+//        
+//        방법1 keyup()붙여도 되네
+//        $("input").keyup(function() {
+//            var value = $(this).val();
+//            console.log(value)
+//        }).keyup();
+        
+        
+//방법2
+//        $("input").keyup(function() {
+//              console.log(this)
+////            console.log( $(this).val());
+////            console.log(this.value);
+//        });
+        
+        $("input").keyup( function () {
+                var value = $(this).val();
+                $("p").text(value);
+            }).keyup();
+//        keyup(); : 인풋엘리먼트중에 키업이라는 이벤트핸들러를 호출해주고있는것
+//        keyup();이붙으면 바로 실행되는것이고 안붙으면 keyup이 되는순간 실행이된다.
+    </script>
+</body></html>

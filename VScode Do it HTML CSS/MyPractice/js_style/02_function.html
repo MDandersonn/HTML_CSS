@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+    function func2(){
+        console.log("함수2실행");
+    }
+    func2();
+
+    // @@@@@@익명함수
+    const func1 = function(){
+        console.log("함수실행");
+    }
+    func1();
+
+
+    //@@@@@@ 화살표함수
+    // 중괄호안에 실행할명령어가 하나뿐이면 중괄호 삭제가능
+    const func0 = ()=>{document.write("화살표함수 실행/ ");}
+    func0();
+    const func01 = (name)=>{document.write(name+"님 매개변수 화살표함수 실행/ ");}
+    func01("경희");
+
+    // 매개변수가 하나라면(name)괄호삭제가능
+    const func02 = name => document.write(name+"님 매개변수 화살표함수 실행/ ");
+    func02("경수");
+
+    // 매개변수가 2개이며 return문이 있는경우
+    
+    let sum= (a,b)=> {return a+b;}
+    console.log(sum(5,5));
+
+    // 문장이 하나면 { } 생략가능 , 그땐 return생략해야함
+    let sum1= (a,b)=>  a+b;
+    console.log(sum1(4,4));
+
+
+
+     // @@@@@@즉시실행함수
+    (function(){
+        var userName= prompt("이름을 입력하세요");
+        document.write(userName+"님 안녕하세요 ");
+    }());
+
+    // 매개변수가있는 즉시실행함수
+    (function(x,y){
+        let sum= x+y;
+        document.write("합계는 "+sum);
+    }(2,3));
+
+    
+
+
+
+
+
+
+
+    </script>
+</body>
+</html>
